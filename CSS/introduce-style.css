@@ -27,6 +27,7 @@
 
 .bread-crumbs ul{
     padding-bottom: 89px;
+    padding-left: 0;
 }
 .bread-crumbs ul{
     display: flex;

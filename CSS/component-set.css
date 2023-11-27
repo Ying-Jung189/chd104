@@ -1,0 +1,76 @@
+*{
+    font-family: "Yu Gothic UI";
+    color: #401202;
+    font-size: 18px;
+}
+
+p{
+    line-height: 180%;
+    margin: 0;
+}
+
+img{
+    border-radius: 25px;
+    width: 100%;
+    vertical-align: middle;
+}
+
+span{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 24px;
+    border-radius: 25px;
+}
+span.new{
+    color: #E6A73D;
+    border: 2px solid ;
+}
+span.discount{
+    color: #F78E77;
+    border: 2px solid ;
+}
+span.inform{
+    color: #84762F;
+    border: 2px solid ;
+}
+.container{
+    display: block;
+    background-color: #E3D1AD;
+    position: relative;
+    
+}
+
+.wrap{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+    background-color: #E9E5DA;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+}
+
+.to-top{
+    position: fixed;
+    bottom: 230px;
+    right: 4%;
+}
+.to-top i{
+    font-size: 64px;
+}
+.media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 400px;
+    left: 4%;
+
+}
+
+.media a i{
+    font-size: 64px;
+    margin: 19px 0;
+}

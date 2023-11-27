@@ -22,11 +22,13 @@
 }
 
 .wrap-item{
+    width: 100%;
     padding: 40px 92px 130px 92px;
 }
 
 .bread-crumbs ul{
     padding-bottom: 89px;
+    padding-left: 0;
 }
 .bread-crumbs ul{
     display: flex;
@@ -44,7 +46,6 @@
 }
 
 .item{
-    width: 1016px;
     margin: auto;
     padding: 25px 0px;
 }
@@ -52,10 +53,27 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 56px;
+    padding: 0 40px;
     border: #60222B 2px solid;
     border-radius: 50px;
+    align-items: center;
+}
+.question h3{
+    color: #60222B;
+    font-size: 24px;
+    line-height: 66px;
+    margin: 0;
+}
+.question i{
+    font-size: 24px;
+    font-weight: bold;
 }
 .answer{
-    padding: 0 56px;
+    margin: 0 30px;
+    padding: 30px 40px;
+    background-color: #F0F1F3;
+    border-radius: 0 0 25px 25px;
+}
+.answer p span{
+    font-weight: 450;
 }

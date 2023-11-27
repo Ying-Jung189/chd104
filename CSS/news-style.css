@@ -1,26 +1,4 @@
-span{
-    font-size: 18px;
-    font-weight: bold;
-    padding: 7px 24px;
-    border-radius: 25px;
-}
-span.new{
-    color: #E6A73D;
-    border: 2px solid ;
-}
-span.discount{
-    color: #F78E77;
-    border: 2px solid ;
-}
-span.inform{
-    color: #84762F;
-    border: 2px solid ;
-}
-img{
-    width: 100%;
-    vertical-align: middle;
-    border-radius: 25px;
-}
+
 
 .banner{
     height: 435px;
@@ -42,7 +20,6 @@ img{
     font-size: 52px;
     margin-top: 52px;
     text-align: center;
-
 }
 
 .wrap-item{
@@ -50,7 +27,8 @@ img{
 }
 
 .bread-crumbs ul{
-    padding-bottom: 33px;
+    padding-bottom: 89px;
+    padding-left: 0;
 }
 .bread-crumbs ul{
     display: flex;

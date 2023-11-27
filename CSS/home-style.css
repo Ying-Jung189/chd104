@@ -187,18 +187,7 @@ img{
     padding: 7px 24px;
     border-radius: 25px;
 }
-.news-wrap a span.new{
-    color: #E6A73D;
-    border: 2px solid ;
-}
-.news-wrap a span.discount{
-    color: #F78E77;
-    border: 2px solid ;
-}
-.news-wrap a span.inform{
-    color: #84762F;
-    border: 2px solid ;
-}
+
 .news .news-wrap a .time{
     font-size: 16px;
 }

@@ -27,6 +27,7 @@
 
 .bread-crumbs ul{
     padding-bottom: 89px;
+    padding-left: 0;
 }
 .bread-crumbs ul{
     display: flex;
@@ -41,4 +42,32 @@
 }
 .bread-crumbs a{
     text-decoration: none;
+}
+
+.news-article{
+    width: 83%;
+    margin: auto;
+}
+.up-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 52px 0;
+}
+.title h1{
+    font-size: 42px;
+    font-weight: bold;
+}
+.news-article .text{
+    margin-top: 60px;
+}
+.text ul li{
+    font-size: 21px;
+    line-height: 180%;
+}
+.text p{
+    font-size: 21px;
+    line-height: 180%;
+    padding: 19px 0;
 }

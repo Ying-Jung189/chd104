@@ -31,8 +31,10 @@ img{
     padding: 40px 92px 130px 92px;
 }
 
+
 .bread-crumbs ul{
     padding-bottom: 89px;
+    padding-left: 0;
 }
 .bread-crumbs ul{
     display: flex;
