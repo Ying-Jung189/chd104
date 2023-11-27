@@ -1,0 +1,80 @@
+.banner{
+    height: 435px;
+    margin: auto;
+    width: 100%;
+    background-size: cover;
+    background-image: url("https://picsum.photos/1920/435/?random=10");
+
+}
+
+.head-bg{
+    width: 100%;
+    height: 450px;
+    background-color: #E3D1AD;
+    position: absolute;
+    top: 372px;
+}
+.head-bg h1{
+    font-size: 52px;
+    margin-top: 76px;
+    text-align: center;
+
+}
+
+.wrap-item{
+    padding: 40px 92px 130px 92px;
+}
+
+.bread-crumbs ul{
+    padding-bottom: 89px;
+}
+.bread-crumbs ul{
+    display: flex;
+    list-style: none;
+}
+.bread-crumbs li + li{
+    padding: 0 5px
+}
+.bread-crumbs li + li::before{
+    content: '/';
+    padding: 10px;
+}
+.bread-crumbs a{
+    text-decoration: none;
+}
+
+.wrap .item{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.text-info{
+    padding-right: 102px;
+    padding-left: 62px;
+}
+.right-side .text-info{
+    order: -1;
+    padding-left: 102px;
+    padding-right: 62px;
+}
+
+.item .pic img{
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.text-info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-info h2{
+    font-size: 40px;
+}
+.text-info p{
+    font-size: 18px;
+}

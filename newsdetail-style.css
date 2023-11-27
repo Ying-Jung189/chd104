@@ -1,0 +1,44 @@
+.banner{
+    height: 435px;
+    margin: auto;
+    width: 100%;
+    background-size: cover;
+    background-image: url("https://picsum.photos/1920/435/?random=10");
+
+}
+
+.head-bg{
+    width: 100%;
+    height: 450px;
+    background-color: #E3D1AD;
+    position: absolute;
+    top: 372px;
+}
+.head-bg h1{
+    font-size: 52px;
+    margin-top: 52px;
+    text-align: center;
+
+}
+
+.wrap-item{
+    padding: 40px 92px 130px 92px;
+}
+
+.bread-crumbs ul{
+    padding-bottom: 89px;
+}
+.bread-crumbs ul{
+    display: flex;
+    list-style: none;
+}
+.bread-crumbs li + li{
+    padding: 0 5px
+}
+.bread-crumbs li::after{
+    content: '/';
+    padding: 10px;
+}
+.bread-crumbs a{
+    text-decoration: none;
+}

@@ -1,0 +1,147 @@
+*{
+    font-family: "Yu Gothic UI";
+    color: #401202;
+    font-size: 18px;
+}
+
+p{
+    line-height: 180%;
+    margin: 0;
+}
+.container{
+    display: block;
+    background-color: #E3D1AD;
+    position: relative;
+    
+}
+
+.nav{
+    display: flex;
+    position: relative;
+}
+.logo{
+    position: absolute;
+    z-index: 2;
+    left: 10.9%;
+    background-color: #401202;
+    border-radius: 0 0 25px 25px;
+    padding: 20px 9px;
+}
+.logo img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.nav-bg{
+    width: 100%;
+    background-color: #E9E5DA;
+}
+.select-area{
+    max-width: 1200px;
+    margin: auto; 
+}
+.select-area ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin: 0;
+    margin-right: -25px;
+
+}
+.select-area ul li{
+    padding: 25px 0;
+}
+
+.select-area ul a{
+    text-decoration: none;
+    line-height: 70px;
+    font-weight: bold ;
+    font-size: 18px;
+    padding: 25px 25px;
+}
+.select-area ul a i{
+    font-size: 24px;
+}
+
+
+.wrap{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin: auto;
+    max-width: 1200px;
+    background-color: #E9E5DA;
+    border-radius: 25px 25px 0 0;
+    position: relative;
+}
+
+
+.footer{
+    background-color: #E9E5DA;
+}
+.footer-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
+    padding: 15px 0;
+}
+.footer .foot-logo img{
+    width: 100%;
+    vertical-align: middle;
+}
+.foot-select{
+    padding-top: 28px;
+}
+.foot-select ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin: 0;
+    margin-right: -25px;
+}
+.select-area ul li{
+    padding: 25px 0;
+}
+.foot-select ul a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold ;
+    line-height: 70px;
+    padding: 35px 25px;
+}
+.footer .copyright{
+    height: 48px;
+    background-color: #401202;
+}
+.footer .copyright p{
+    font-size: 16px;
+    line-height: 3;
+    color: #F0F1F3;
+    text-align: center ;
+}
+
+.to-top{
+    position: fixed;
+    bottom: 230px;
+    right: 4%;
+}
+.to-top i{
+    font-size: 64px;
+}
+.media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 400px;
+    left: 4%;
+
+}
+
+.media a i{
+    font-size: 64px;
+    margin: 19px 0;
+}

@@ -1,0 +1,113 @@
+.banner{
+    height: 435px;
+    margin: auto;
+    width: 100%;
+    background-size: cover;
+    background-image: url("https://picsum.photos/1920/435/?random=10");
+
+}
+
+.head-bg{
+    width: 100%;
+    height: 450px;
+    background-color: #E3D1AD;
+    position: absolute;
+    top: 372px;
+}
+.head-bg h1{
+    font-size: 52px;
+    margin-top: 76px;
+    text-align: center;
+
+}
+
+.wrap-item{
+    padding: 40px 100px 130px 100px;
+}
+
+.bread-crumbs ul{
+    padding-bottom: 33px;
+}
+.bread-crumbs ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+.bread-crumbs li + li{
+    padding: 0 5px
+}
+.bread-crumbs li + li::before{
+    content: '/';
+    padding: 10px;
+}
+.bread-crumbs a{
+    text-decoration: none;
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 27px 0;
+    width: 100%;
+    position: relative;
+}
+img{
+    vertical-align: middle;
+    border-radius: 25px;
+}
+
+.first-pic img{
+    
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.first-pic img.left-top{
+    position: absolute;
+    left: 56px;
+    top: 120px;
+
+}
+.first-pic img.right-bottom{
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+}
+
+.first-text{
+    width: 42%;
+    margin: auto;
+    margin-bottom: 241px;
+}
+.first-text h2{
+    font-size: 42px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+p{
+    line-height: 240%;
+    margin-bottom: 100px;
+    margin: 0;
+}
+.first-text p{
+    padding: 21px 0;
+}
+.second-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 62px;
+}
+p.third-text{
+    width: 35%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0 0px 0 100px;
+}
+.item:last-child >.pic{
+    margin-left: auto;
+
+}
+
+
