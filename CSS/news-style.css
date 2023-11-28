@@ -9,23 +9,6 @@
 
 }
 
-.head-bg{
-    width: 100%;
-    height: 450px;
-    background-color: #E3D1AD;
-    position: absolute;
-    top: 372px;
-}
-.head-bg h1{
-    font-size: 52px;
-    margin-top: 52px;
-    text-align: center;
-}
-
-.wrap-item{
-    padding: 40px 76px 100px 76px;
-}
-
 .bread-crumbs ul{
     padding-bottom: 89px;
     padding-left: 0;
@@ -33,7 +16,6 @@
 .bread-crumbs ul{
     display: flex;
     list-style: none;
-    margin: 0;
 }
 .bread-crumbs li + li{
     padding: 0 5px
@@ -45,7 +27,6 @@
 .bread-crumbs a{
     text-decoration: none;
 }
-
 
 .top-news{
     display: flex;

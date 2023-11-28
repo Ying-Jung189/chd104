@@ -1,7 +1,9 @@
 
 .nav{
     display: flex;
-    position: relative;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
 }
 .logo{
     position: absolute;

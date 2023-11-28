@@ -1,29 +1,3 @@
-.banner{
-    height: 435px;
-    margin: auto;
-    width: 100%;
-    background-size: cover;
-    background-image: url("https://picsum.photos/1920/435/?random=10");
-
-}
-
-.head-bg{
-    width: 100%;
-    height: 450px;
-    background-color: #E3D1AD;
-    position: absolute;
-    top: 372px;
-}
-.head-bg h1{
-    font-size: 52px;
-    margin-top: 76px;
-    text-align: center;
-
-}
-
-.wrap-item{
-    padding: 40px 100px 130px 100px;
-}
 
 .bread-crumbs ul{
     padding-bottom: 89px;
@@ -52,13 +26,8 @@
     width: 100%;
     position: relative;
 }
-img{
-    vertical-align: middle;
-    border-radius: 25px;
-}
 
 .first-pic img{
-    
     border-radius: 50%;
     overflow: hidden;
 }

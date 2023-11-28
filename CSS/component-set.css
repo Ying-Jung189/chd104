@@ -9,13 +9,13 @@ p{
     margin: 0;
 }
 
-img{
+.pic img{
     border-radius: 25px;
     width: 100%;
     vertical-align: middle;
 }
 
-span{
+.tag span{
     font-size: 18px;
     font-weight: bold;
     padding: 7px 24px;
@@ -33,11 +33,35 @@ span.inform{
     color: #84762F;
     border: 2px solid ;
 }
+
 .container{
     display: block;
     background-color: #E3D1AD;
     position: relative;
     
+}
+
+.banner{
+    height: 435px;
+    margin: auto;
+    width: 100%;
+    background-size: cover;
+    background-image: url("https://picsum.photos/1920/435/?random=10");
+
+}
+
+.head-bg{
+    width: 100%;
+    height: 450px;
+    background-color: #E3D1AD;
+    position: absolute;
+    top: 372px;
+}
+.head-bg h1{
+    font-size: 52px;
+    margin-top: 76px;
+    text-align: center;
+
 }
 
 .wrap{
@@ -50,6 +74,10 @@ span.inform{
     background-color: #E9E5DA;
     border-radius: 25px 25px 0 0;
     position: relative;
+}
+
+.wrap-item{
+    padding: 40px 92px 130px 92px;
 }
 
 .to-top{
