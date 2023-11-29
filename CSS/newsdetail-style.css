@@ -1,4 +1,10 @@
-
+.banner{
+    height: 555px;
+    margin: auto;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../images/new-detail/news-detail-banner.jpg");
+}
 .bread-crumbs ul{
     padding-bottom: 89px;
     padding-left: 0;
@@ -17,7 +23,19 @@
 .bread-crumbs a{
     text-decoration: none;
 }
-
+.bread-pic-1{
+    position: absolute;
+    left: 100px;
+    bottom: -30px;
+}
+.bread-pic-1 img{
+    width: 30%;
+}
+.bread-pic-2{
+    position: absolute;
+    right: 240px;
+    top:0;
+}
 .news-article{
     width: 83%;
     margin: auto;
@@ -29,12 +47,32 @@
     align-items: center;
     padding: 20px 0 52px 0;
 }
+.news-article .pic{
+    position: relative;
+}
+.bread-pic-3{
+    position: absolute;
+    left: -160px;
+    top: 120px;
+}
+.pic .bread-pic-3 img{
+    width: 70%;
+}
 .title h1{
     font-size: 42px;
     font-weight: bold;
 }
 .news-article .text{
     margin-top: 60px;
+    position: relative;
+}
+.text .bread-pic-4{
+    position: absolute;
+    right: -160px;
+    top: 160px;
+}
+.bread-pic-4 img{
+    width: 60%;
 }
 .text ul li{
     font-size: 21px;

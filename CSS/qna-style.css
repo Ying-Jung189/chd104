@@ -1,4 +1,10 @@
-
+.banner{
+    height: 555px;
+    margin: auto;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../images/qna/qna-banner.png");
+}
 .bread-crumbs ul{
     padding-bottom: 89px;
     padding-left: 0;

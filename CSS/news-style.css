@@ -1,11 +1,9 @@
-
-
 .banner{
-    height: 435px;
+    height: 555px;
     margin: auto;
     width: 100%;
     background-size: cover;
-    background-image: url("https://picsum.photos/1920/435/?random=10");
+    background-image: url("../images/news/news-banner.png");
 
 }
 
@@ -27,7 +25,14 @@
 .bread-crumbs a{
     text-decoration: none;
 }
-
+.bread-pic-1{
+    position: absolute;
+    top: 40px;
+    right: 88px;
+}
+.bread-pic-1 img{
+    width: 70%;
+}
 .top-news{
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +40,14 @@
     margin-top: 94px;
     margin-bottom: 94px;
     justify-content: space-between;
+    position: relative;
 }
+.top-news .bread-pic-2{
+    position: absolute;
+    bottom: -90px;
+    left: -90px;
+}
+
 .top-news .news-info{
     width: 39%;
     display: flex;
@@ -47,14 +59,19 @@
     line-height: 1.5;
     margin: 0;
 }
-
-.tag-time{
+.top-news .pic{
+    width: 57%;
+}
+.card .pic img{
+    border-radius: 25px 25px 0 0 ;
+}
+.tag{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 34px 0 20px 0;
 }
-.tag-time .time{
+.tag .time{
     align-self: center;
 }
 
@@ -78,10 +95,11 @@ a.more-btn{
     font-size: 24px;
     font-weight: bold;
     padding: 10px 75px;
-    font-weight: bold;
     border-radius: 40px;
     border: 3px solid;
-    margin-top: 27px;
+    margin-top: 25px;
+    color: #60222B;
+    border-color: #60222B;
 }
 
 a{
@@ -93,6 +111,17 @@ a .card{
     background-color: #F0F1F3;
     border-radius: 25px;
 } 
+.card .samepic{
+    position: relative;
+}
+.card .samepic span{
+    position: relative;
+    top: -70px;
+    left: 65px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #60222B;
+}
 
 a .card .news-info{
     padding: 25px;
@@ -125,7 +154,21 @@ a .news-info .tag-time{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 80px;
+    position: relative;
+}
+.pages .bread-pic-3{
+    position: absolute;
+    left: 70px;
+    top:-40px;
+}
+.pages .bread-pic-4{
+    position: absolute;
+    right: 60px;
+    top:-40px;
+}
+.bread-pic-3 img, .bread-pic-4 img{
+    width: 80%;
 }
 
 .pages a{    

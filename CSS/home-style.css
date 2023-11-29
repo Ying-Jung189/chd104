@@ -1,5 +1,4 @@
 
-
 a.more-btn{
     text-decoration: none;
     font-size: 24px;
@@ -11,22 +10,24 @@ a.more-btn{
 }
 
 
-
-
 .home-banner{
     height: 1000px;
     margin: auto;
     width: 100%;
     background-size: cover;
-    background-image: url("https://picsum.photos/1920/1000/?random=10");
+    background-image: url("../images/home/banner-home.png");
 
 }
 
 .homehead-bg{
     width: 100%;
-    height: 450px;
-    background-color: #E3D1AD;
+    height: 550px;
+    margin: auto;
+    background-image: url("../images/Mask\ group.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
+    z-index:0;
     top: 736px;
 }
 
@@ -45,9 +46,9 @@ a.more-btn{
     align-content: center;
     padding: 150px 92px;
     position: relative;
-    background-color: #E3D1AD;
-}
 
+
+}
 .concept .concept-pic img{
     width: 100%;
     vertical-align: middle;
@@ -88,7 +89,17 @@ a.more-btn{
     flex-wrap: wrap;  
     flex-direction: column;
     justify-content: center;
-
+    position: relative;
+}
+.pick-up .bread-pic-4{
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+}
+.pick-up .bread-pic-1{
+    position: absolute;
+    right: 90px;
+    top:0;
 }
 .pick-up h2{
     text-align: center;
@@ -112,6 +123,24 @@ a.more-btn{
 .pick-up .item:nth-child(3) .pickup-pic{
     order: 1;
 }
+.pick-up .item:nth-child(3) .pickup-text{
+    position: relative;
+}
+.item:nth-child(3) .pickup-text .bread-pic-3{
+    position: absolute;
+    top: -30px;
+    left: 0px;
+
+}
+.pick-up .item:nth-child(3) .pickup-pic{
+    position: relative;
+}
+.item:nth-child(3) .pickup-pic .bread-pic-2{
+    position: absolute;
+    right: -120px;
+    bottom: -210px;
+}
+
 .pick-up .item h3{
     font-size: 24px;
     font-weight: bold;
@@ -123,11 +152,10 @@ a.more-btn{
     margin: 0;
 }
 
-.pick-up a.more-btn{
+.pick-up  a.more-btn{
     margin: 21px auto 84px auto;
 
 }
-
 
 
 .news{
@@ -136,8 +164,9 @@ a.more-btn{
     flex-wrap: wrap;  
     flex-direction: column;
     row-gap: 100px;
-    background-color: #E3D1AD;
+    position: relative;
 }
+
 .news h2{
     margin: auto;
     font-size: 48px;
@@ -155,9 +184,7 @@ a.more-btn{
     text-decoration: none;
     width: 25%;
 }
-/* .news .news-wrap a.card .pic{
-    width: 80%;
-} */
+
 .news .news-wrap a.card img{
     width: 100%;
     vertical-align: middle; 
@@ -189,11 +216,11 @@ a.more-btn{
     font-size: 16px;
 }
 .news .news-wrap  a.move-icon {
-    padding: 0 30px;
+    padding: 0 28px;
 }
-.news .news-wrap  a.move-icon i{
+/* .news .news-wrap  a.move-icon i{
     font-size: 48px;
-}
+} */
 .news a.more-btn{
     margin: auto;
     margin-bottom: 84px;

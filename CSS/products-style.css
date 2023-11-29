@@ -1,4 +1,11 @@
+.banner{
+    height: 555px;
+    margin: auto;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../images/buy/buy-banner.png");
 
+}
 .bread-crumbs ul{
     padding-bottom: 89px;
     padding-left: 0;
@@ -42,7 +49,7 @@
 }
 h2{
     font-size: 36px;
-    padding: 40px 0 32px 0;
+    padding: 80px 0 32px 0;
     margin: 0;
 }
 a.card{
@@ -53,6 +60,9 @@ a.card{
     background-color: #F0F1F3;
     text-decoration: none;
     border-radius: 25px;
+}
+a.card img{
+    border-radius: 25px 25px 0 0;
 }
 .info{
     display: flex;
@@ -80,14 +90,27 @@ a.card h3{
     font-size: 24px;
 }
 
-
-
 .pages{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 80px;
+    position: relative;
 }
+.pages .bread-pic-2{
+    position: absolute;
+    left: 70px;
+    top:-40px;
+}
+.pages .bread-pic-3{
+    position: absolute;
+    right: 60px;
+    top:-40px;
+}
+.bread-pic-2 img, .bread-pic-3 img{
+    width: 80%;
+}
+
 
 .pages a{    
     align-self: center;

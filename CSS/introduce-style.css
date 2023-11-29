@@ -1,3 +1,10 @@
+.banner{
+    height: 555px;
+    margin: auto;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../images/introbuce/introduce-banner.png");
+}
 .bread-crumbs ul{
     padding-bottom: 89px;
     padding-left: 0;

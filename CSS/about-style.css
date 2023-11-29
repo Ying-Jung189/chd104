@@ -1,4 +1,11 @@
+.banner{
+    height: 555px;
+    margin: auto;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../images/about/about-banner.jpg");
 
+}
 .bread-crumbs ul{
     padding-bottom: 89px;
     padding-left: 0;
@@ -26,7 +33,30 @@
     width: 100%;
     position: relative;
 }
-
+.bread-pic-1{
+    position: absolute;
+    left: 30px;
+    bottom: 100px;
+}
+.bread-pic-2{
+    position: absolute;
+    right: 90px;
+    top:0;
+}
+.bread-pic-3{
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+    transform: rotate(30deg);
+}
+.bread-pic-4{
+    position: absolute;
+    right: 150px;
+    bottom: 0px;
+}
+.bread-pic-3 img{
+    width: 60%;
+}
 .first-pic img{
     border-radius: 50%;
     overflow: hidden;
@@ -69,6 +99,9 @@ p{
     justify-content: center;
     padding-left: 62px;
 }
+.item:nth-child(3) >.pic{
+    width: 42%;
+}
 p.third-text{
     width: 35%;
     margin-top: auto;
@@ -77,6 +110,7 @@ p.third-text{
 }
 .item:last-child >.pic{
     margin-left: auto;
+    width: 48%;
 
 }
 

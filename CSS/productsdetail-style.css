@@ -1,4 +1,10 @@
-
+.banner{
+    height: 555px;
+    margin: auto;
+    width: 100%;
+    background-size: cover;
+    background-image: url("../images/product-detail/products-detail-banner.png");
+}
 .bread-crumbs ul{
     padding-bottom: 89px;
 }
@@ -15,6 +21,20 @@
 }
 .bread-crumbs a{
     text-decoration: none;
+}
+
+.bread-pic-1{
+    position: absolute;
+    left: 40px;
+    bottom: -30px;
+}
+.bread-pic-1 img{
+    width: 50%;
+}
+.bread-pic-2{
+    position: absolute;
+    right: 120px;
+    top: 80px;
 }
 
 .order-section{
@@ -35,6 +55,20 @@
     width: calc(48% - 60px);
     margin-left: 60px;
     padding-top: 100px;
+    position: relative;
+}
+.bread-pic-3{
+    position: absolute;
+    left: 40px;
+    bottom: 0px;
+}
+.bread-pic-4{
+    position: absolute;
+    right: -80px;
+    bottom: -160px;
+}
+.bread-pic-3 img, .bread-pic-4 img{
+    width: 70%;
 }
 .buy h2{
     font-size: 42px;

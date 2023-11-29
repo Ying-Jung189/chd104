@@ -11,8 +11,8 @@ p{
 
 .pic img{
     border-radius: 25px;
-    width: 100%;
     vertical-align: middle;
+    width: 100%;
 }
 
 .tag span{
@@ -38,24 +38,32 @@ span.inform{
     display: block;
     background-color: #E3D1AD;
     position: relative;
+    z-index: 0;
     
 }
-
-.banner{
-    height: 435px;
-    margin: auto;
+.container::before{
+    background-image:url(../images/clean-gray-paper-640x960.png);
+    content: "";
+    display: block;
+    height:100%;
     width: 100%;
-    background-size: cover;
-    background-image: url("https://picsum.photos/1920/435/?random=10");
-
+    opacity: 0.21;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
+
 
 .head-bg{
     width: 100%;
     height: 450px;
-    background-color: #E3D1AD;
+    background-image: url("../images/Mask\ group.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     position: absolute;
-    top: 372px;
+    top: 278px;
 }
 .head-bg h1{
     font-size: 52px;
@@ -76,6 +84,7 @@ span.inform{
     position: relative;
 }
 
+
 .wrap-item{
     padding: 40px 92px 130px 92px;
 }
@@ -83,10 +92,13 @@ span.inform{
 .to-top{
     position: fixed;
     bottom: 230px;
-    right: 4%;
+    right: 2%;
 }
 .to-top i{
     font-size: 64px;
+}
+.close{
+    display: none;
 }
 .media{
     display: flex;
@@ -94,11 +106,15 @@ span.inform{
     align-items: center;
     position: fixed;
     top: 400px;
-    left: 4%;
+    left: 2%;
 
 }
 
 .media a i{
     font-size: 64px;
     margin: 19px 0;
+    color: #F0F1F3;
+}
+.media a i.change-color{
+    color: #401202;
 }
