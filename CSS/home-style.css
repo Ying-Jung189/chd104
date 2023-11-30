@@ -15,7 +15,7 @@ a.more-btn{
     margin: auto;
     width: 100%;
     background-size: cover;
-    background-image: url("../images/home/banner-home.png");
+    background-image: url("../images/home/banner-home.jpg");
 
 }
 
@@ -59,7 +59,7 @@ a.more-btn{
     left: 350px;
 
 }
-.concept h1{
+.concept h2{
     font-size: 36px;
     font-weight: bold;
     margin: 0;
@@ -103,7 +103,7 @@ a.more-btn{
 }
 .pick-up h2{
     text-align: center;
-    font-size: 48px;
+    font-size: 42px;
     margin-top: 68px 0 ;
 }
 .pick-up .item{
@@ -141,7 +141,7 @@ a.more-btn{
     bottom: -210px;
 }
 
-.pick-up .item h3{
+.pick-up .item h5{
     font-size: 24px;
     font-weight: bold;
     margin: 0;
@@ -169,7 +169,7 @@ a.more-btn{
 
 .news h2{
     margin: auto;
-    font-size: 48px;
+    font-size: 42px;
     font-weight: bold;
     padding-top: 100px;
 }
@@ -193,7 +193,7 @@ a.more-btn{
     display: flex;
     justify-content: space-between;
 }
-.news .news-wrap a h3{
+.news .news-wrap a h5{
     display: inline-block;
     font-size: 24px;
     font-weight: bold;
@@ -205,15 +205,27 @@ a.more-btn{
     -webkit-line-clamp: 1;
     overflow: hidden;
 }
-.news .news-wrap a span{
+.news .news-wrap a .tag span{
     font-size: 18px;
     font-weight: bold;
     padding: 7px 24px;
     border-radius: 25px;
 }
 
+.news .samepic {
+    position: relative;
+}
+.news .samepic span{
+    position: absolute;
+    font-size: 24px;
+    top: 130px;
+    left: 60px;
+    font-weight: bold;
+    color: #60222B;
+}
+
 .news .news-wrap a .time{
-    font-size: 16px;
+    font-size: 18px;
 }
 .news .news-wrap  a.move-icon {
     padding: 0 28px;

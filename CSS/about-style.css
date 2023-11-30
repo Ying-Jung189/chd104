@@ -51,8 +51,11 @@
 }
 .bread-pic-4{
     position: absolute;
-    right: 150px;
+    right: 200px;
     bottom: 0px;
+}
+.bread-pic-4 img{
+    width: 60%;
 }
 .bread-pic-3 img{
     width: 60%;

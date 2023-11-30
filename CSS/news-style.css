@@ -27,17 +27,16 @@
 }
 .bread-pic-1{
     position: absolute;
-    top: 40px;
+    top: 20px;
     right: 88px;
 }
 .bread-pic-1 img{
-    width: 70%;
+    width: 60%;
 }
 .top-news{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    margin-top: 94px;
     margin-bottom: 94px;
     justify-content: space-between;
     position: relative;
@@ -49,18 +48,23 @@
 }
 
 .top-news .news-info{
-    width: 39%;
+    width: 36%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
-.top-news .news-info h2{
-    font-size: 32px;
+.top-news .news-info h3{
+    font-size: 36px;
     line-height: 1.5;
     margin: 0;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 .top-news .pic{
-    width: 57%;
+    width: 60%;
 }
 .card .pic img{
     border-radius: 25px 25px 0 0 ;
@@ -69,7 +73,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 34px 0 20px 0;
+    padding-top: 20px;
 }
 .tag .time{
     align-self: center;
@@ -111,14 +115,16 @@ a .card{
     background-color: #F0F1F3;
     border-radius: 25px;
 } 
+
 .card .samepic{
     position: relative;
+
 }
 .card .samepic span{
-    position: relative;
-    top: -70px;
+    position: absolute;
+    top:120px;
     left: 65px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     color: #60222B;
 }
@@ -127,7 +133,7 @@ a .card .news-info{
     padding: 25px;
 }
 
-a .news-info h3.title{
+a .news-info h5.title{
     font-size: 24px;
     font-weight: bold;
     margin: 0;

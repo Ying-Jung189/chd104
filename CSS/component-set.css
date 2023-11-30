@@ -2,6 +2,7 @@
     font-family: "Yu Gothic UI";
     color: #401202;
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 p{

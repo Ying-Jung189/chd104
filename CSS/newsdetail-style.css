@@ -45,7 +45,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0 52px 0;
+    padding: 20px 0 ;
 }
 .news-article .pic{
     position: relative;
@@ -58,7 +58,7 @@
 .pic .bread-pic-3 img{
     width: 70%;
 }
-.title h1{
+.title h2{
     font-size: 42px;
     font-weight: bold;
 }

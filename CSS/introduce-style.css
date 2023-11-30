@@ -28,6 +28,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: auto;
+    padding: 10PX 0;
 
 }
 
@@ -54,8 +55,8 @@
     flex-direction: column;
     justify-content: center;
 }
-.text-info h2{
-    font-size: 40px;
+.text-info h4{
+    font-size: 32px;
 }
 .text-info p{
     font-size: 18px;

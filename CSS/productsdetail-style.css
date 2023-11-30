@@ -81,7 +81,7 @@
     padding: 12px 0 ;
 }
 .price-tag .price span{
-    font-size: 60px;
+    font-size: 52px;
     color: #60222B;
     padding: 0;
 }
@@ -115,7 +115,7 @@
     padding: 0 30px;
 }
 .amount input.buy-number{
-    font-size: 32px;
+    font-size: 36px;
     height: 36px;
     width: 50%;
     text-align: center;
@@ -204,4 +204,8 @@ ul label.tabs-y{
     color: #9F9393;
     border: 0;
     margin-bottom: 0px;
+}
+
+label{
+    cursor: pointer;
 }
