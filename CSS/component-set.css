@@ -59,8 +59,9 @@ span.inform{
 
 .head-bg{
     width: 100%;
+    margin: auto;
     height: 450px;
-    background-image: url("../images/Mask\ group.png");
+    background-image: url("../images/head-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
