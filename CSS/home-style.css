@@ -44,7 +44,7 @@ a.more-btn{
 .concept{
     display: flex;
     align-content: center;
-    padding: 150px 92px;
+    padding: 120px 92px;
     position: relative;
 
 
@@ -102,13 +102,14 @@ a.more-btn{
     top:0;
 }
 .pick-up h2{
-    text-align: center;
+    margin: auto;
     font-size: 42px;
-    margin-top: 68px 0 ;
+    font-weight: bold;
+    padding: 100px 0 64px 0;
 }
 .pick-up .item{
     display: flex; 
-    margin: 64px 92px;
+    margin: 36px 92px;
     justify-content: space-between;
 }
 .pick-up .pickup-text{
