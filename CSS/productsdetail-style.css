@@ -114,6 +114,12 @@
     width: 50%;
     padding: 0 30px;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
 .amount input.buy-number{
     font-size: 36px;
     height: 36px;
