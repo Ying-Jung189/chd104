@@ -72,69 +72,62 @@
 }
 .buy h2{
     font-size: 42px;
-    font-weight: bold;
 }
-.buy .price-tag{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 12px 0 ;
-}
-.price-tag .price span{
-    font-size: 52px;
-    color: #60222B;
-    padding: 0;
-}
-.tag{
-    margin-top: 32px;
-}
-.tag span{
+.tag span{    
+    display: inline-block;
     color: #60222B;
     border: 2px solid ;
 }
 
-.btn-list{
-    width: 100%;
-    margin-top: 10px;
+.buy p{
+    margin: 10px 0 35px 0;
+}
+.buy .price-amount{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    padding: 12px 0 ;
 }
-.btn-list .btn{
-    width: 46%;
-    box-sizing: border-box;
+.price-amount .price span{
+    font-size: 48px;
+    font-weight: bold;
+    color: #60222B;
+    padding: 0;
 }
-.btn-list .amount{
+.price-amount .amount{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-radius: 40px;
     background-color: #F0F1F3;
     display: flex;
     width: 50%;
-    padding: 0 30px;
+    padding: 5px 20px;
 }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 -webkit-appearance: none;
 margin: 0;
 }
 .amount input.buy-number{
-    font-size: 36px;
+    font-size: 24px;
     height: 36px;
     width: 50%;
     text-align: center;
     border: 1px #E6E6E6 solid;
     border-radius: 10px;
 }
-/* .btn-list .shop{
+.btn{
+    box-sizing: border-box;
+    margin: 10px 0;
+}
 
-} */
-.btn-list button.shop{
+.btn button{
+    width: 100%;
     font-size: 21px;
     font-weight: bold;  
-    padding:  18px 45.5px;
+    padding:  18px 0;
     border-radius: 40px;
     border: 0;
     background-color: #60222B;

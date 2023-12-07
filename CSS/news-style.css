@@ -57,14 +57,10 @@
     font-size: 36px;
     line-height: 1.5;
     margin: 0;
-
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
 }
 .top-news .pic{
     width: 60%;
+    margin-top: auto;
 }
 .card .pic img{
     border-radius: 25px 25px 0 0 ;
@@ -73,7 +69,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 20px;
+    padding: 10px 0;
 }
 .tag .time{
     align-self: center;
@@ -101,7 +97,7 @@ a.more-btn{
     padding: 10px 75px;
     border-radius: 40px;
     border: 3px solid;
-    margin-top: 25px;
+    margin-top: 20px;
     color: #60222B;
     border-color: #60222B;
 }
@@ -114,6 +110,9 @@ a .card{
     margin: 6px 7px;
     background-color: #F0F1F3;
     border-radius: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 } 
 
 .card .samepic{
@@ -131,17 +130,16 @@ a .card{
 
 a .card .news-info{
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 a .news-info h5.title{
     font-size: 24px;
-    font-weight: bold;
     margin: 0;
     margin-bottom: 10px ;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
+    flex-grow: 1;
 }
 a .news-info p.text{
     line-height: 180%;

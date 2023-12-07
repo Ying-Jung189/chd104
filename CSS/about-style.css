@@ -67,14 +67,13 @@
 
 .first-pic img.left-top{
     position: absolute;
-    left: 56px;
+    left: -10px;
     top: 120px;
-
 }
 .first-pic img.right-bottom{
     position: absolute;
-    right: 0;
-    bottom: 120px;
+    right: -30px;
+    bottom: 0px;
 }
 
 .first-text{

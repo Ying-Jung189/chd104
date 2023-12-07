@@ -16,7 +16,22 @@ a.more-btn{
     width: 100%;
     background-size: cover;
     background-image: url("../images/home/banner-home.jpg");
-
+    position: relative;
+}
+.home-banner h1, .home-banner h2{
+    font-size: 52px;
+    position: absolute;
+    background-color: rgba(237,167,61,60%);
+    padding: 25px;
+    border-radius: 20px;
+}
+.home-banner h1{
+    right: 500px;
+    top: 200px;
+}
+.home-banner h2{
+    right: 200px;
+    top: 330px;
 }
 
 .homehead-bg{
@@ -42,45 +57,29 @@ a.more-btn{
 }
 
 .concept{
+    padding: 100px 92px 120px 92px;
     display: flex;
-    align-content: center;
-    padding: 120px 92px;
-    position: relative;
-
-
+    flex-wrap: wrap;
+    align-items: center;
 }
-.concept .concept-pic img{
-    width: 100%;
-    vertical-align: middle;
+.concept .concept-pic {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
 } 
-.concept .title{
-    position: absolute;
-    top: 200px;
-    left: 350px;
-
+.concept-pic img.left{
+    width: 50%;
+    padding-right: 20px;
 }
-.concept h2{
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0;
-    padding: 40px 30px;
-    display: inline-block;
-    background-color: rgba(237,167,61,60%);
-    border-radius: 25px;
+.concept-pic img.right{
+    width: 40%;
 }
 .concept p{
     font-size: 18px;
-    padding: 0 0 92px 72px;
-    margin: 0;
 }
 .concept .concept-text{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: end;
+    width: 40%;
 }
-
-
 
 .pick-up{
     background-color:#F0F1F3;
@@ -89,22 +88,24 @@ a.more-btn{
     flex-wrap: wrap;  
     flex-direction: column;
     justify-content: center;
-    position: relative;
 }
-.pick-up .bread-pic-4{
-    position: absolute;
-    left: 30px;
-    bottom: 40px;
-}
-.pick-up .bread-pic-1{
-    position: absolute;
-    right: 90px;
-    top:0;
+.illus{
+    background-image: url(../images/bread-illus/bread-1.png) ,
+    url(../images/bread-illus/bread-2.png) ,
+    url(../images/bread-illus/bread-3.png) ,
+    url(../images/bread-illus/bread-4.png);
+
+    background-repeat: no-repeat, no-repeat, no-repeat ,no-repeat;
+    background-position:
+    top right 90px,
+    top 40% left,
+    bottom 30% right,
+    bottom 30px left 10px;
+
 }
 .pick-up h2{
     margin: auto;
     font-size: 42px;
-    font-weight: bold;
     padding: 100px 0 64px 0;
 }
 .pick-up .item{
@@ -127,24 +128,11 @@ a.more-btn{
 .pick-up .item:nth-child(3) .pickup-text{
     position: relative;
 }
-.item:nth-child(3) .pickup-text .bread-pic-3{
-    position: absolute;
-    top: -30px;
-    left: 0px;
-
-}
 .pick-up .item:nth-child(3) .pickup-pic{
     position: relative;
 }
-.item:nth-child(3) .pickup-pic .bread-pic-2{
-    position: absolute;
-    right: -120px;
-    bottom: -210px;
-}
-
 .pick-up .item h5{
     font-size: 24px;
-    font-weight: bold;
     margin: 0;
 }
 .pick-up .item p{
@@ -171,7 +159,6 @@ a.more-btn{
 .news h2{
     margin: auto;
     font-size: 42px;
-    font-weight: bold;
     padding-top: 100px;
 }
 .news .news-wrap{
@@ -197,7 +184,6 @@ a.more-btn{
 .news .news-wrap a h5{
     display: inline-block;
     font-size: 24px;
-    font-weight: bold;
     margin: 0;
     padding: 20px 0 24px 0;
 
@@ -208,7 +194,6 @@ a.more-btn{
 }
 .news .news-wrap a .tag span{
     font-size: 18px;
-    font-weight: bold;
     padding: 7px 24px;
     border-radius: 25px;
 }
@@ -221,7 +206,6 @@ a.more-btn{
     font-size: 24px;
     top: 130px;
     left: 70px;
-    font-weight: bold;
     color: #60222B;
 }
 

@@ -5,7 +5,13 @@
     scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5{
+    font-weight: bold;
+    color: #60222B;;
+}
+
 p{
+    font-family: "微軟正黑";
     line-height: 180%;
     margin: 0;
 }
@@ -23,11 +29,11 @@ p{
     border-radius: 25px;
 }
 span.new{
-    color: #E6A73D;
+    color: #D7981D;
     border: 2px solid ;
 }
 span.discount{
-    color: #F78E77;
+    color: #E8785F;
     border: 2px solid ;
 }
 span.inform{
@@ -93,7 +99,7 @@ span.inform{
 
 .to-top{
     position: fixed;
-    bottom: 230px;
+    bottom: 100px;
     right: 2%;
 }
 .to-top i{
