@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/nav-footer.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
     <link rel="stylesheet" href="CSS/home-style.css">
     <link rel="stylesheet" href="CSS/component-set.css">
     <script src="https://kit.fontawesome.com/ea4f510ceb.js" crossorigin="anonymous"></script>
@@ -12,7 +11,7 @@
 </head>
 <body>
     <dic class="container">
-        <div class="nav">
+        <header>
             <div class="logo">
                 <a href="index.html"><img src="images/logo/logo-white.svg"></a>
             </div>
@@ -33,7 +32,25 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="https://picsum.photos/72/72/?random=10"></a>
+            </div>
+            <div class="nav-icons">
+                <ul>
+                    <li><a href="#">
+                        <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-user" style="color: #401202;"></i>
+                    </a></li>
+                    <li class="menu"><a href="#">
+                        <i class="fa-solid fa-bars" style="color: #401202;"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
         <div class="home-banner">    
                 <h1>用一餐麵包</h1>
                 <h2>享受片刻美好時光</h2>
@@ -83,46 +100,83 @@
             </div>
             <div class="news">
                 <h2>最新消息</h2>
-                <div class="news-wrap">
-                    <a href="#" class="move-icon">
-                        <img src="images/home/home-news-left.svg" alt=""></i>
-                    </a>
-                    <a href="news-detail.html" class="card">
-                        <div class="pic"><img src="images/home/news-1.png"></div>
-                        <h5>秋季新品！栗子蒙布朗吐司</h5>
-                        <div class="below-info">
-                            <div class="tag"><span class="new">New</span></div>
-                            <div class="time">2023.11.09</div>
-                        </div>
-                    </a>
-                    <a href="#" class="card">
-                        <div class="pic"><img src="images/home/news-2.png"></div>
-                        <h5>美味多重享受！經典貝果組</h5>
-                        <div class="below-info">
-                            <div class="tag"><span class="discount">優惠</span></div>
-                            <div class="time">2023.10.25</div>
-                        </div>
-                    </a>
-                    <a href="#" class="card">
-                        <div class="pic samepic">
-                            <img src="images/home/news-3.png">
-                            <span>店家休息公告</span>
-                        </div>
-                        <h5>日光小麥所休息公告</h5>
-                        <div class="below-info">
-                            <div class="tag"><span class="inform">公告</span></div>
-                            <div class="time">2023.10.13</div>
-                        </div>
-                    </a>
-                    <a href="#" class="move-icon">
-                        <img src="images/home/home-news-right.svg" alt=""></i>
-                    </a>
+                <div class="news-container">
+                    <div class="news-wrap">
+                        <a href="news-detail.html" class="card">
+                            <div class="pic"><img src="images/home/news-1.png"></div>
+                            <h5>秋季新品！栗子蒙布朗吐司</h5>
+                            <div class="below-info">
+                                <div class="tag"><span class="new">New</span></div>
+                                <div class="time">2023.11.09</div>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="pic"><img src="images/home/news-2.png"></div>
+                            <h5>美味多重享受！經典貝果組</h5>
+                            <div class="below-info">
+                                <div class="tag"><span class="discount">優惠</span></div>
+                                <div class="time">2023.10.25</div>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="pic samepic">
+                                <img src="images/home/news-3.png">
+                                <span>店家休息公告</span>
+                            </div>
+                            <h5>日光小麥所休息公告</h5>
+                            <div class="below-info">
+                                <div class="tag"><span class="inform">公告</span></div>
+                                <div class="time">2023.10.13</div>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="pic samepic">
+                                <img src="images/home/news-3.png">
+                                <span>店家休息公告</span>
+                            </div>
+                            <h5>日光小麥所休息公告</h5>
+                            <div class="below-info">
+                                <div class="tag"><span class="inform">公告</span></div>
+                                <div class="time">2023.10.13</div>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="pic samepic">
+                                <img src="images/home/news-3.png">
+                                <span>店家休息公告</span>
+                            </div>
+                            <h5>日光小麥所休息公告</h5>
+                            <div class="below-info">
+                                <div class="tag"><span class="inform">公告</span></div>
+                                <div class="time">2023.10.13</div>
+                            </div>
+                        </a>
+                        <a href="#" class="card">
+                            <div class="pic samepic">
+                                <img src="images/home/news-3.png">
+                                <span>店家休息公告</span>
+                            </div>
+                            <h5>日光小麥所休息公告</h5>
+                            <div class="below-info">
+                                <div class="tag"><span class="inform">公告</span></div>
+                                <div class="time">2023.10.13</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="move-icon">
+                        <a href="#" class="left-btn">
+                            <img src="images/home/home-news-left.svg" alt=""></i>                    
+                        </a>
+                        <a href="#" class="right-btn">
+                            <img src="images/home/home-news-right.svg" alt=""></i>
+                        </a>
+                    </div>
         
                 </div>
                 <a href="news.html"  class="more-btn">More</a>
             </div>
         </div>
-        <div class="footer">
+        <footer>
             <div class="footer-area">
                 <a href="#" class="foot-logo">
                     <img src="images/logo/logo-1113 2.svg">
@@ -137,8 +191,21 @@
                     </ul>
                 </div>
             </div>
+            <div class="mobile-footer">
+                <a href="#" class="foot-logo">
+                    <img src="https://picsum.photos/64/64/?random=10">
+                </a>
+                <div class="social-media">
+                    <a href="#" class="fb">
+                        <i class="fa-brands fa-facebook" ></i>
+                    </a>
+                    <a href="#" class="ig">
+                        <i class="fa-brands fa-instagram" ></i>
+                    </a>
+                </div>
+            </div>           
             <div class="copyright"><p>本網站為緯育TibaMe前端工程師班第88期學員專題作品平台僅供學習、展示之用。</p></div>
-        </div>
+        </footer>
         <a href="#" id="top" class="to-top close">
             <i class="fa-solid fa-circle-chevron-up" style="color: #60222b;"></i>
         </a>

@@ -25,13 +25,19 @@
 .bread-crumbs a{
     text-decoration: none;
 }
-.bread-pic-1{
-    position: absolute;
-    top: 20px;
-    right: 88px;
-}
-.bread-pic-1 img{
-    width: 60%;
+
+.illus{
+    background-image: 
+    url(../images/bread-illus/bread-2.png) ,
+    url(../images/bread-illus/bread-5.png) ,
+    url(../images/bread-illus/bread-1.png) ;
+
+    background-repeat: no-repeat, no-repeat, no-repeat ;
+    background-position:
+    top 30% left,
+    bottom 45px right 20% ,
+    bottom 45px left 20%;
+    background-size: 15%;
 }
 .top-news{
     display: flex;
@@ -39,12 +45,6 @@
     margin: auto;
     margin-bottom: 94px;
     justify-content: space-between;
-    position: relative;
-}
-.top-news .bread-pic-2{
-    position: absolute;
-    bottom: -90px;
-    left: -90px;
 }
 
 .top-news .news-info{
@@ -159,20 +159,6 @@ a .news-info .tag-time{
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 80px;
-    position: relative;
-}
-.pages .bread-pic-3{
-    position: absolute;
-    left: 70px;
-    top:-40px;
-}
-.pages .bread-pic-4{
-    position: absolute;
-    right: 60px;
-    top:-40px;
-}
-.bread-pic-3 img, .bread-pic-4 img{
-    width: 80%;
 }
 
 .pages a{    

@@ -1,119 +1,209 @@
 .banner{
-    height: 555px;
-    margin: auto;
-    width: 100%;
-    background-size: cover;
     background-image: url("../images/about/about-banner.jpg");
+}
+@media screen and (max-width: 768px) {
+    .bread-crumbs ul{
+        display: none;
+    }
+}
+@media screen and (min-width: 769px) {
+    .bread-crumbs ul{
+        padding-bottom: 4rem;
+        padding-left: 0;
+    }
+    .bread-crumbs ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+    }
+    .bread-crumbs li + li{
+        padding: 0 5px
+    }
+    .bread-crumbs li + li::before{
+        content: '/';
+        padding: 10px;
+    }
+    .bread-crumbs a{
+        text-decoration: none;
+    }
+}   
+@media screen and (min-width: 1024px) {
+    .bread-crumbs ul{
+        padding-bottom: 6rem;
+    }
+}
 
-}
-.bread-crumbs ul{
-    padding-bottom: 89px;
-    padding-left: 0;
-}
-.bread-crumbs ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-}
-.bread-crumbs li + li{
-    padding: 0 5px
-}
-.bread-crumbs li + li::before{
-    content: '/';
-    padding: 10px;
-}
-.bread-crumbs a{
-    text-decoration: none;
+
+.illus{
+    background-image: url(../images/bread-illus/bread-1.png) ,
+    url(../images/bread-illus/bread-2.png) ,
+    url(../images/bread-illus/bread-3.png) ,
+    url(../images/bread-illus/bread-4.png);
+
+    background-repeat: no-repeat, no-repeat, no-repeat ,no-repeat;
+    background-position:
+    top right 4rem,
+    top 35% left,
+    bottom 30% right ,
+    bottom 30px left 10px;
+    background-size: 20%;
 }
 
 .item{
     display: flex;
     flex-wrap: wrap;
-    padding: 27px 0;
     width: 100%;
     position: relative;
 }
-.bread-pic-1{
-    position: absolute;
-    left: 30px;
-    bottom: 100px;
+@media screen and (max-width: 768px) {
+    .item{
+        flex-direction: column;
+        align-content: center;
+        padding: 4rem 0;
+    }
 }
-.bread-pic-2{
-    position: absolute;
-    right: 90px;
-    top:0;
-}
-.bread-pic-3{
-    position: absolute;
-    left: 0;
-    bottom: 100px;
-    transform: rotate(30deg);
-}
-.bread-pic-4{
-    position: absolute;
-    right: 200px;
-    bottom: 0px;
-}
-.bread-pic-4 img{
-    width: 60%;
-}
-.bread-pic-3 img{
-    width: 60%;
-}
+@media screen and (min-width: 769px) {
+    .item{
+        padding: 1.75rem 0;
+    }
+}   
+
+
 .first-pic img{
     border-radius: 50%;
     overflow: hidden;
 }
-
-.first-pic img.left-top{
+img.left-top, img.right-bottom{
     position: absolute;
-    left: -10px;
-    top: 120px;
 }
-.first-pic img.right-bottom{
-    position: absolute;
-    right: -30px;
-    bottom: 0px;
+@media screen and (max-width: 768px) {
+    .first-pic img.left-top{
+        width: 25%;
+        left: -40px;
+        top: 100px;
+    }
+    .first-pic img.right-bottom{
+        width: 40%;
+        right: -40px;
+        bottom: 0px;
+    }
+}
+@media screen and (min-width: 769px) {
+    .first-pic img.left-top{
+        width: 28%;
+        left: -30px;
+        top: 100px;
+    }
+    .first-pic img.right-bottom{
+        width: 35%;
+        right: -30px;
+        bottom: 0px;
+    }
+}   
+@media screen and (min-width: 1024px) {
+    .first-pic img.left-top{
+        width: 25%;
+        top: 80px;
+    }
+    .first-pic img.right-bottom{
+        width: 33%;
+        bottom: 50px;
+    }
 }
 
 .first-text{
-    width: 42%;
     margin: auto;
-    margin-bottom: 241px;
 }
 .first-text h2{
-    font-size: 42px;
-    margin-bottom: 100px;
     text-align: center;
 }
 p{
     line-height: 240%;
-    margin-bottom: 100px;
     margin: 0;
 }
 .first-text p{
-    padding: 21px 0;
+    padding: 1.5rem 0;
 }
-.second-text{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 62px;
-}
-.item:nth-child(3) >.pic{
-    width: 42%;
-}
-p.third-text{
-    width: 35%;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 0 0px 0 100px;
-}
-.item:last-child >.pic{
-    margin-left: auto;
-    width: 48%;
+@media screen and (max-width: 768px) {
+    .first-text{
+        width: 60%;
+        margin-bottom: 10rem;
+    }
+    .first-text h2{
+        font-size: 32px;
+        margin-bottom: 4rem;
 
+    }
+}
+@media screen and (min-width: 769px) {
+    .first-text{
+        width: 50%;
+        margin-bottom: 10rem;
+    }
+    .first-text h2{
+        font-size: 36px;
+        margin-bottom: 5rem;
+    }
+}   
+@media screen and (min-width: 1024px) {
+    .first-text{
+        width: 42%;
+        margin-bottom: 15rem;
+    }
+    .first-text h2{
+        font-size: 42px;
+    }
 }
 
+
+@media screen and (max-width: 768px) {
+    p.third-text,.second-text p{
+        padding: 0.75rem 0;
+    }
+    .pic{
+        width: 100%;
+        padding: 0.75rem 0;
+        margin: auto;
+    }
+    .item:last-child >.pic{
+        order: -1;
+    }
+    
+}
+@media screen and (min-width: 769px) {
+    .second-text{
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 2rem;
+    }
+    .second-text p{
+        padding: 1rem 0;
+    }
+    .item:nth-child(3) >.pic{
+        width: 40%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    p.third-text{
+        width: 40%;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 0 0px 0 2rem;
+    }
+    .item:last-child >.pic{
+        margin-left: auto;
+        width: 48%;
+    }
+}   
+@media screen and (min-width: 1024px) {
+    .second-text{
+        width: 40%;
+        padding-left: 3.75rem;
+    }
+    p.third-text{
+        width: 35%;
+        padding: 0 0px 0 6.25rem;
+    }
+}
 

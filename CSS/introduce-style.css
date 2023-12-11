@@ -1,63 +1,93 @@
 .banner{
-    height: 555px;
-    margin: auto;
-    width: 100%;
-    background-size: cover;
     background-image: url("../images/introbuce/introduce-banner.png");
 }
-.bread-crumbs ul{
-    padding-bottom: 89px;
-    padding-left: 0;
+@media screen and (max-width: 768px) {
+    .bread-crumbs ul{
+        display: none;
+    }
 }
-.bread-crumbs ul{
-    display: flex;
-    list-style: none;
-}
-.bread-crumbs li + li{
-    padding: 0 5px
-}
-.bread-crumbs li + li::before{
-    content: '/';
-    padding: 10px;
-}
-.bread-crumbs a{
-    text-decoration: none;
-}
+@media screen and (min-width: 769px) {
+    .bread-crumbs ul{
+        padding-bottom: 4rem;
+        padding-left: 0;
+    }
+    .bread-crumbs ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+    }
+    .bread-crumbs li + li{
+        padding: 0 5px
+    }
+    .bread-crumbs li + li::before{
+        content: '/';
+        padding: 10px;
+    }
+    .bread-crumbs a{
+        text-decoration: none;
+    }
+}  
 
 .wrap .item{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     margin: auto;
-    padding: 10PX 0;
-
+    padding: 0.75rem 0;
 }
 
 .text-info{
-    padding-right: 102px;
-    padding-left: 62px;
-}
-.right-side .text-info{
-    order: -1;
-    padding-left: 102px;
-    padding-right: 62px;
-}
-
-.pic{
-    width: 43%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .item .pic img{
     border-radius: 50%;
     overflow: hidden;
 }
-.text-info{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+@media screen and (max-width: 768px) {
+    .text-info{
+        padding: 2.25rem;
+    }
+    .pic{
+        width: 75%;
+    }
+    .right-side .pic{
+        margin-left: auto;
+    }
+    .text-info h4{
+        font-size: 24px;
+        padding: 1.5rem 0;
+    }
+    .text-info p{
+        font-size: 16px;
+    }
 }
-.text-info h4{
-    font-size: 32px;
-}
-.text-info p{
-    font-size: 18px;
+@media screen and (min-width: 769px) {
+    .text-info{
+        width: 45%;
+        padding: 1.5rem;
+    }
+    .right-side .text-info{
+        order: -1;
+    }
+    .pic{
+        width: 45%;
+    }
+    
+    .text-info h4{
+        font-size: 32px;
+        padding: 1.5rem 0;
+    }
+    .text-info p{
+        font-size: 18px;
+    }
+}   
+@media screen and (min-width: 1024px) {
+    .text-info{
+        width: 38%;
+        padding: 0 4rem;
+    }
 }

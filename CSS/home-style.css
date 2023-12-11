@@ -9,55 +9,124 @@ a.more-btn{
     color: #60222B;
 }
 
-
 .home-banner{
-    height: 1000px;
     margin: auto;
     width: 100%;
     background-size: cover;
-    background-image: url("../images/home/banner-home.jpg");
+    background-repeat: no-repeat;
     position: relative;
+    background-image: url("../images/home/banner-home.jpg");
 }
 .home-banner h1, .home-banner h2{
-    font-size: 52px;
     position: absolute;
     background-color: rgba(237,167,61,60%);
-    padding: 25px;
     border-radius: 20px;
 }
-.home-banner h1{
-    right: 500px;
-    top: 200px;
+@media screen and (max-width: 768px) {
+    .home-banner{
+        height: 420px;
+    }
+    .home-banner h1, .home-banner h2{
+        font-size: 36px;
+        padding: 15px;
+    }
+    .home-banner h1{
+        right: 250px;
+        bottom: 230px;
+    }
+    .home-banner h2{
+        right: 50px;
+        bottom: 140px;
+    }
 }
-.home-banner h2{
-    right: 200px;
-    top: 330px;
+@media screen and (min-width: 769px) {
+    .home-banner{
+        height: 640px;
+    }
+    .home-banner h1, .home-banner h2{
+        font-size: 48px;
+        padding: 25px;
+    }
+    .home-banner h1{
+        right: 350px;
+        top: 200px;
+    }
+    .home-banner h2{
+        right: 50px;
+        top: 330px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .home-banner{
+        height: 800px;
+    }
+    .home-banner h1, .home-banner h2{
+        font-size: 52px;
+        padding: 25px;
+    }
+    .home-banner h1{
+        right: 500px;
+        top: 200px;
+    }
+    .home-banner h2{
+        right: 200px;
+        top: 330px;
+    }
 }
 
 .homehead-bg{
     width: 100%;
-    height: 450px;
+    height: 100%;
     margin: auto;
     background-image: url("../images/head-bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     z-index:0;
-    top: 736px;
 }
+@media screen and (max-width: 768px) {
+    .homehead-bg{
+        top: 300px;
+    }
+}
+@media screen and (min-width: 769px) {
+    .homehead-bg{
+        top: 500px;
+    }
+}   
+@media screen and (min-width: 1024px) {
+    .homehead-bg{
+        top: 600px;
+    }
+}
+
 
 .wrap-home{
     height: 100%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
     margin: auto;
-    max-width: 1200px;
     position: relative;
+}
+@media screen and (max-width: 768px) {
+    .wrap-home{
+        max-width: 92%;
+    }
+}
+@media screen and (min-width: 769px) {
+    .wrap-home{
+        max-width: 92%;
+    }
+}   
+@media screen and (min-width: 1024px) {
+    .wrap-home{
+        max-width: 1200px;
+    }
 }
 
 .concept{
-    padding: 100px 92px 120px 92px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -74,20 +143,32 @@ a.more-btn{
 .concept-pic img.right{
     width: 40%;
 }
-.concept p{
-    font-size: 18px;
-}
 .concept .concept-text{
     width: 40%;
+}
+@media screen and (max-width: 768px) {
+    .concept{
+        padding: 3rem 3.25rem 4rem 3.25rem;
+    }
+}
+@media screen and (min-width: 769px) {
+    .concept{
+        padding: 3.5rem 4rem 4.5rem 4rem;
+    }
+}   
+@media screen and (min-width: 1024px) {
+    .concept{
+        padding: 5.75rem 6rem 7.5rem 6rem;
+    }
 }
 
 .pick-up{
     background-color:#F0F1F3;
-    border-radius: 25px;
     display: flex;
     flex-wrap: wrap;  
     flex-direction: column;
     justify-content: center;
+    border-radius: 25px;
 }
 .illus{
     background-image: url(../images/bread-illus/bread-1.png) ,
@@ -97,82 +178,119 @@ a.more-btn{
 
     background-repeat: no-repeat, no-repeat, no-repeat ,no-repeat;
     background-position:
-    top right 90px,
+    top right 4rem,
     top 40% left,
     bottom 30% right,
     bottom 30px left 10px;
-
+    background-size: 20%;
 }
 .pick-up h2{
     margin: auto;
-    font-size: 42px;
-    padding: 100px 0 64px 0;
-}
-.pick-up .item{
-    display: flex; 
-    margin: 36px 92px;
-    justify-content: space-between;
 }
 .pick-up .pickup-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 0 0 32px;
-}
-.pick-up .pickup-text.left{
-    padding: 0 32px 0 0;
-}
-.pick-up .item:nth-child(3) .pickup-pic{
-    order: 1;
-}
-.pick-up .item:nth-child(3) .pickup-text{
-    position: relative;
-}
-.pick-up .item:nth-child(3) .pickup-pic{
-    position: relative;
-}
-.pick-up .item h5{
-    font-size: 24px;
-    margin: 0;
+    padding: 0 0 0 2rem;
+    width: 50%;
 }
 .pick-up .item p{
-    padding: 10px 0;
-    font-size: 18px;
-    margin: 0;
+    padding: 0.5rem 0;
 }
 
 .pick-up  a.more-btn{
-    margin: 21px auto 84px auto;
+    margin: 1.5rem auto 5.25rem auto;
+
+} 
+@media screen and (max-width: 768px) {
+    .pick-up h2{
+        margin: auto;
+        font-size: 32px;
+        padding: 2.25rem 0 3rem 0;
+    }
+    .pick-up .item{
+        display: flex; 
+        flex-direction: column;
+        margin: 2.25rem ;
+        justify-content: space-between;
+    }
+    .pick-up .item h5{
+        font-size: 21px;
+    }
+    .pickup-pic {
+        width: 100%;
+    }
+    .pickup-pic img{
+        width: 100%;
+    }
+    .pick-up .pickup-text{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 769px) {
+    .pick-up h2{
+        margin: auto;
+        font-size: 42px;
+        padding: 4rem 0 2.75rem 0;
+    }
+    .pick-up .item{
+        display: flex; 
+        margin: 1.5rem 4rem;
+        justify-content: space-between;
+    }
+    .pick-up .item h5{
+        font-size: 24px;
+    }
+    .pick-up .pickup-text.left{
+        padding: 0 32px 0 0;
+    }
+    .pick-up .item:nth-child(3) .pickup-pic{
+        order: 1;
+    }
+    .pickup-pic {
+        width: 50%;
+    }
+    .pickup-pic img{
+        width: 100%;
+    }
+    .pick-up .pickup-text{
+        width: 50%;
+    }
+
+}   
+@media screen and (min-width: 1024px) {
+    .pick-up h2{
+        margin: auto;
+        font-size: 42px;
+        padding: 6.25rem 0 4rem 0;
+    }
+    .pick-up .item{
+        margin: 2.25rem 6rem;
+    }
 
 }
 
-
+/* 最新消息需寫list，左右鍵position定位 */
 .news{
     width: 100%;
     display: flex;
     flex-wrap: wrap;  
     flex-direction: column;
-    row-gap: 100px;
+    row-gap: 6.25rem;
     position: relative;
+    align-items: center;
 }
-
-.news h2{
-    margin: auto;
-    font-size: 42px;
-    padding-top: 100px;
+.news .news-container{
+    position: relative;
+    overflow: hidden;
 }
 .news .news-wrap{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: auto;
+    padding: 0 5rem;
+    margin-bottom: 1rem;
 }
-.news .news-wrap a.card{
-    padding: 0px 12px; 
-    text-decoration: none;
-    width: 25%;
-}
-
 .news .news-wrap a.card img{
     width: 100%;
     vertical-align: middle; 
@@ -183,44 +301,94 @@ a.more-btn{
 }
 .news .news-wrap a h5{
     display: inline-block;
-    font-size: 24px;
     margin: 0;
-    padding: 20px 0 24px 0;
+    padding: 1.25rem 0 1.5rem 0;
 
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
 }
-.news .news-wrap a .tag span{
-    font-size: 18px;
-    padding: 7px 24px;
-    border-radius: 25px;
-}
 
+.move-icon{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+}
+.move-icon a.left-btn{
+    left: 16px;
+    position: absolute;
+}
+.move-icon a.right-btn{
+    right: 16px;
+    position: absolute;
+}
 .news .samepic {
     position: relative;
 }
 .news .samepic span{
     position: absolute;
-    font-size: 24px;
-    top: 130px;
-    left: 70px;
+    font-weight: bold;
     color: #60222B;
 }
-
-.news .news-wrap a .time{
-    font-size: 18px;
-}
-.news .news-wrap  a.move-icon {
-    padding: 0 28px;
-}
-/* .news .news-wrap  a.move-icon i{
-    font-size: 48px;
-} */
 .news a.more-btn{
     margin: auto;
-    margin-bottom: 84px;
+    margin-bottom: 5.25rem;
+}
+@media screen and (max-width: 768px) {
+    .news{
+        row-gap: 3rem;
+    }
+    .news h2{
+        font-size: 32px;
+        padding-top: 2.25rem;
+    }
+    .news .news-wrap a h5{
+        font-size: 21px;
+    }
+    .news .news-wrap a .time{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (min-width: 769px) {
+    .news{
+        row-gap: 4.5rem;
+    }
+    .news .news-wrap a.card{
+        padding: 0px 0.75rem; 
+        width: 30%;
+    }
+    .news h2{
+        font-size: 42px;
+        padding-top: 4rem;
+    }
+    .news .news-wrap a h5{
+        font-size: 24px;
+    }
+    .news .news-wrap a .time{
+        font-size: 18px;
+    }
+    .news .samepic span{
+        top: 90px;
+        left: 45px;
+        font-size: 21px;
+    }
+    
+
+}   
+@media screen and (min-width: 1024px) {
+    .news{
+        row-gap: 6.25rem;
+    }
+    .news h2{
+        padding-top: 6.25rem;
+    }
+    .news .samepic span{
+        top: 60%;
+        left: 25%;
+        font-size: 24px;
+    }
 
 }
 
