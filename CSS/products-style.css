@@ -1,57 +1,144 @@
 .banner{
-    height: 555px;
-    margin: auto;
-    width: 100%;
-    background-size: cover;
     background-image: url("../images/buy/buy-banner.png");
+}
 
+@media screen and (max-width: 768px) {
+    .bread-crumbs ul{
+        display: none;
+    }
 }
-.bread-crumbs ul{
-    padding-bottom: 89px;
-    padding-left: 0;
+@media screen and (min-width: 769px) {
+    .bread-crumbs ul{
+        padding-bottom: 4rem;
+        padding-left: 0;
+    }
+    .bread-crumbs ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+    }
+    .bread-crumbs li + li{
+        padding: 0 5px
+    }
+    .bread-crumbs li + li::before{
+        content: '/';
+        padding: 10px;
+    }
+    .bread-crumbs a{
+        text-decoration: none;
+    }
+}   
+@media screen and (min-width: 1024px) {
+    .bread-crumbs ul{
+        padding-bottom: 6rem;
+    }
 }
-.bread-crumbs ul{
-    display: flex;
-    list-style: none;
+
+.illus{
+    background-image: 
+    url(../images/bread-illus/bread-2.png) ,
+    url(../images/bread-illus/bread-5.png) ,
+    url(../images/bread-illus/bread-1.png) ;
+
+    background-repeat: no-repeat, no-repeat, no-repeat ;
+    background-size: 15%;
 }
-.bread-crumbs li + li{
-    padding: 0 5px
+@media screen and (max-width: 768px) {
+    .illus{
+        background-position:
+        top 1% left 0,
+        bottom 60px right 5% ,
+        bottom 60px left 5%;
+    }
 }
-.bread-crumbs li + li::before{
-    content: '/';
-    padding: 10px;
-}
-.bread-crumbs a{
-    text-decoration: none;
-}
+@media screen and (min-width: 769px) {
+    .illus{
+        background-position:
+        top 25% left 0,
+        bottom 45px right 15% ,
+        bottom 45px left 15%;
+    }
+}   
+@media screen and (min-width: 1024px) {
+    .illus{
+        background-position:
+        top 27% right 20%,
+        bottom 45px right 20% ,
+        bottom 45px left 20%;
+    }
+}  
 
 .select-section ul{
+    margin-left: 2.5rem;
     display: flex;
-    justify-content: center;
-    list-style: none;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: stretch;
 }
 .select-section ul li{
-    width: 160px;
-    height: 57.6px;
-    margin: 0 23px;
     box-sizing: border-box;
     border-radius: 50px;
     border: #60222B 2px solid;
 }
 .select-section li a{
-    text-decoration: none;
     font-weight: bold;
     color: #60222B;
     display: block;
     text-align: center;
-    font-size: 21px;
-    line-height: 2.5;
 }
-h3{
-    font-size: 36px;
-    padding: 80px 0 32px 0;
-    margin: 0;
+
+@media screen and (max-width: 768px) {
+    .select-section ul li{
+        width: 7rem;
+        margin: 0.75rem .5rem;
+    }
+    .select-section ul li:first-child{
+        display: block;
+    }
+    .select-section li a{
+        font-size:  18px;
+        line-height: 2.4;
+    }
 }
+@media screen and (min-width: 769px) {
+    .select-section ul li{
+        width: 9rem;
+        margin: 0.75rem .75rem;
+    }
+    .select-section li a{
+        font-size: 21px;
+        line-height: 2.25;
+    }
+
+}
+@media screen and (min-width: 860px) {
+    .select-section ul{
+        justify-content: center;
+        margin: auto;
+    }
+    .select-section ul li{
+        width: 9rem;
+        margin: 0.75rem 1.4%;
+    }
+    .select-section ul li:first-child{
+        display: none;
+    }
+    .select-section li a{
+        font-size: 21px;
+        line-height: 2.25;
+    }
+
+}    
+@media screen and (min-width: 1024px) {
+    .select-section ul li{
+        width: 10rem;
+        margin: 0.75rem 1.5rem;
+    }
+    .select-section li a{
+        line-height: 2.5;
+    }
+}  
+
 a.card{
     height: 100%;
     display: block;
@@ -69,12 +156,12 @@ a.card img{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 25px;
+    padding: 1.5rem;
     flex-grow: 1;
 }
 a.card h5{
     font-size: 24px;
-    margin-top: 0;
+    margin: 0 0 1rem 0;
     flex-grow: 1;
 }
 .below{
@@ -84,49 +171,66 @@ a.card h5{
 }
 .below span{
     padding: 0;
+    font-size: 18px;
 }
 .below .shop i{
     font-size: 24px;
 }
 
+@media screen and (max-width: 768px) {
+    h3{
+        font-size: 32px;
+        padding: 3rem 0 2rem 0;
+    }
+}
+@media screen and (min-width: 769px) {
+    h3{
+        font-size: 36px;
+        padding: 4rem 0 2rem 0;
+    }
+}  
+@media screen and (min-width: 1024px) {
+    h3{
+        font-size: 36px;
+        padding: 5rem 0 2rem 0;
+    }
+}  
+
 .pages{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 80px;
-    position: relative;
+    margin-top: 5rem;
 }
-.pages .bread-pic-2{
-    position: absolute;
-    left: 70px;
-    top:-40px;
-}
-.pages .bread-pic-3{
-    position: absolute;
-    right: 60px;
-    top:-40px;
-}
-.bread-pic-2 img, .bread-pic-3 img{
-    width: 80%;
-}
-
-
 .pages a{    
     align-self: center;
-    padding: 8px 15px;
-    margin: 12px;
-    font-size: 21px;
     font-weight: bold;
     display: inline-block;
     text-decoration: none;
     border: #60222B 2px solid;
     color: #60222B;
     border-radius: 50%;
-
 }
-
 .pages a.current{
     background-color: #60222B;
     color: #F0F1F3;
     overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+    .pages{
+        display: none;
+    }
+}
+@media screen and (min-width: 769px) {
+    .pages{
+        margin-top: 5rem;
+    }
+    .pages a{    
+        padding: 0.5rem 1rem;
+        margin: 0.75rem;
+        font-size: 21px;
+    }
+    .pages a:nth-child(5){
+        padding: 0.5rem 0.9rem;
+    }
+}   

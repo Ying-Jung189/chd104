@@ -1,8 +1,4 @@
 .banner{
-    height: 555px;
-    margin: auto;
-    width: 100%;
-    background-size: cover;
     background-image: url("../images/news/news-banner.png");
 
 }
@@ -89,7 +85,6 @@
     flex-direction: column;
 }
 .top-news .news-info h3{
-    font-size: 36px;
     line-height: 1.5;
     margin: 0;
 }
@@ -160,6 +155,9 @@
     .more-btn a{
         font-size: 21px;
     }
+    .top-news .news-info h3{
+        font-size: 32px;
+    } 
 }   
 @media screen and (min-width: 1024px) {
     .top-news{
@@ -177,6 +175,9 @@
     .more-btn a{
         font-size: 24px;
     }
+    .top-news .news-info h3{
+        font-size: 36px;
+    }  
 }
 
 
@@ -224,10 +225,10 @@ a .news-info .tag-time{
     padding-bottom: 0;
 }
 @media screen and (max-width: 768px) {
-    a:first-child{
+    .row a:first-child{
         display: block;
     }
-    a:last-child{
+    .row a:last-child{
         display: none;
     }
     .card .samepic span{ 
@@ -237,21 +238,21 @@ a .news-info .tag-time{
     }
 }
 @media screen and (min-width: 769px) {
-    a:first-child{
+    .row a:first-child{
         display: none;
     }
-    a:last-child{
+    .row a:last-child{
         display: block;
     }
     .card .samepic span{ 
         top: 60%;
-        left: 30%;
+        left: 28%;
         font-size: 24px;
     }
 }   
 @media screen and (min-width: 1024px) {
     .card .samepic span{ 
-        left: 25%;
+        left: 24%;
     }
 }
 
@@ -285,14 +286,16 @@ a .news-info .tag-time{
         margin: 0.5rem;
         font-size: 21px;
     }
+    .pages a:nth-child(5){
+        padding: 0.5rem 0.9rem;
+    }
 }
 @media screen and (min-width: 769px) {
     .pages{
         margin-top: 5rem;
     }
     .pages a{    
-        padding: 0.5rem 1rem;
         margin: 0.75rem;
-        font-size: 21px;
     }
+
 }   

@@ -49,7 +49,6 @@
 }
 
 .news-article{
-    width: 83%;
     margin: auto;
 }
 .up-info{
@@ -85,6 +84,9 @@
     .text p{
         font-size: 18px;
     }
+    .news-article{
+        width: 100%;
+    }
 }
 @media screen and (min-width: 769px) {
     .title h2{
@@ -98,6 +100,9 @@
     }
     .text p{
         font-size: 21px;
+    }
+    .news-article{
+        width: 85%;
     }
 }   
 @media screen and (min-width: 1024px) {

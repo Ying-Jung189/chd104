@@ -38,7 +38,8 @@
         <nav>
             <div class="logo">
                 <a href="index.html"><img src="https://picsum.photos/72/72/?random=10"></a>
-            </div>
+            </div>  
+            <input type="checkbox" id="switch">          
             <div class="nav-icons">
                 <ul>
                     <li><a href="#">
@@ -46,10 +47,30 @@
                     </a></li>
                     <li><a href="#">
                         <i class="fa-solid fa-user" style="color: #401202;"></i>
-                    </a></li>
-                    <li class="menu"><a href="#">
-                        <i class="fa-solid fa-bars" style="color: #401202;"></i>
-                    </a></li>
+                    </a></li>  
+                    <label for="switch">
+                        <li class="menu">
+                            <i class="fa-solid fa-bars" style="color: #401202;">
+                            </i>
+                        </li>
+                    </label>               
+                </ul>
+            </div>
+            <div class="hb">
+                <ul>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="news.html">最新消息</a></li>
+                    <li><a href="products.html">購買麵包</a></li>
+                    <li><a href="introduce-bread.html">認識麵包</a></li>
+                    <li><a href="qna.html">常見問題</a></li>
+                    <li class="social-media">
+                        <a href="#" class="fb">
+                            <i class="fa-brands fa-facebook" ></i>
+                        </a>
+                        <a href="#" class="ig">
+                            <i class="fa-brands fa-instagram" ></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -58,7 +79,7 @@
         <div class="head-bg">
             <h1>購買麵包</h1>
         </div>
-        <div class="wrap">
+        <div class="wrap illus">
             <div class="wrap-item">
                 <div class="bread-crumbs">
                     <ul>
@@ -68,6 +89,7 @@
                 </div>
                 <div class="select-section">
                     <ul>
+                        <li><a href="#takeout">全部</a></li>
                         <li><a href="#takeout">手拿棒</a></li>
                         <li><a href="#bagel">貝果</a></li>
                         <li><a href="#german-bread">德國麵包</a></li>
@@ -76,7 +98,7 @@
                 </div>
                 <h3 id="toast">吐司</h3>
                 <div class="row">                    
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="products-detail.html" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy-1.png">
@@ -92,7 +114,7 @@
                             </div>
                         </a>
                     </div> 
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy-2.png">
@@ -109,7 +131,7 @@
                         </a>
                     </div> 
                 
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy-4.png">
@@ -124,7 +146,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy-5.png">
@@ -144,7 +166,7 @@
                 <h3 id="takeout">手拿棒</h3>
                 <div class="row">
 
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy2-1.png">
@@ -160,7 +182,7 @@
                             </div>
                         </a>
                     </div> 
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy2-2.png">
@@ -176,7 +198,7 @@
                             </div>
                         </a>
                     </div> 
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy2-3.png">
@@ -192,7 +214,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy2-4.png">
@@ -211,7 +233,7 @@
                 </div>
                 <h3 id="bagel">貝果</h3>
                 <div class="row">
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy3-1.png">
@@ -227,7 +249,7 @@
                             </div>
                         </a>
                     </div> 
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy3-2.png">
@@ -243,7 +265,7 @@
                             </div>
                         </a>
                     </div> 
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy3-3.png">
@@ -259,7 +281,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy3-4.png">
@@ -275,7 +297,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy3-5.png">
@@ -291,7 +313,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy3-6.png">
@@ -311,7 +333,7 @@
                 <h3 id="german-bread">德國麵包</h3>
                 <div class="row">
                     
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy4-1.png">
@@ -327,7 +349,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy4-2.png">
@@ -343,7 +365,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
                                 <img src="images/buy/buy4-3.png">
@@ -359,7 +381,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-md-3">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a  href="#"class="card">
                             <div class="pic">
                                 <img src="images/buy/buy4-4.png">
@@ -377,13 +399,12 @@
                     </div>                   
                 </div>
                 <div class="pages">
-                    <div class="bread-pic-2"><img src="images/bread-illus/bread-1.png" alt=""></div>
                     <a class="current">1</a>
                     <a href="#">2</a>
                     <a href="#">3</a>
                     <a href="#">4</a>
-                    <a href="#">5</a>
-                    <div class="bread-pic-3"><img src="images/bread-illus/bread-3.png" alt=""></div>
+                    <a href="#">...</a>
+                    <a href="#"><i class="fa-solid fa-chevron-right"></i> </a>
                 </div>
             </div>
         </div>            
