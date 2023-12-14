@@ -1,7 +1,9 @@
 .banner{
     background-image: url("../images/qna/qna-banner.png");
 }
-@media screen and (max-width: 768px) {
+
+
+@media screen and (min-width: 576px) {
     .bread-crumbs ul{
         display: none;
     }
@@ -57,6 +59,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    cursor: pointer;
     
     border: #60222B 2px solid;
     border-radius: 50px;
@@ -113,20 +116,4 @@
     }
 } 
 
-label.q-1 i.fa-plus{
-    display: none;
-}
-
-input#question-1[type="checkbox"] {
-    display: none;
-}
-#question-1:checked ~.answer{
-    display: block;
-}
-#question-1:checked ~.question label.q-1 i.fa-plus{
-    display: block;
-}
-#question-1:checked ~.question label.q-1 i.fa-minus{
-    display: none;
-}
     

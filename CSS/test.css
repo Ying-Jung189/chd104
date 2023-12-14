@@ -1,32 +1,32 @@
 @media screen and (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
     .order-section .sm-pic-list{
         display: none;
     }
     .lg-pic {
         border: 1px solid #ccc;
         border-radius: 10px;
-        width: 70%;
-        margin:  auto;
-        
-        overflow: hidden; 
+        width: 88%;
+        aspect-ratio: 1/1;
+        position: relative;
+        overflow: hidden;
     }
     
     .lg-pic #lg-pic-list {
-        list-style: none;
         position: relative;
     }
     
     .lg-pic #lg-pic-list li {
-        box-sizing: border-box;
-        padding: 0 2rem;
-        text-align: center;
         float: left;
     }
     
     .lg-pic #lg-pic-list img {
-        text-align: center;
+        aspect-ratio: 1/1;
         width: 100%;
-        height: 100%;
 
     }
     
