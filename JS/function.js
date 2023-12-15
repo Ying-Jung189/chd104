@@ -1,63 +1,71 @@
 $(function () {
-let divWidth, divHeight, winWidth, winHeight, imgCount, index = 0;
+    let divWidth, div, winWidth, winWidthInit, imgCount, index, ratio = 0;
+    let isResize = false;
 
-function initializeGallery() {
-    divWidth = $('#lg-pic').width();
-    divHeight = $('#lg-pic').height();
-    winWidth = $(window).width();
-    winHeight = $(window).height();
-    imgCount = $('#lg-pic-list li').length;
+    function init() {
+        divWidth = $('#lg-pic').width();
+        winWidthInit = $(window).width();
+        imgCount = $('#lg-pic-list li').length;
+        moveCenter();
+    }
 
-    moveCenter();
-}
+    function moveCenter() {
+        $('#lg-pic').css({
+            left: (winWidth - divWidth) / 2,
+            top: 0
+        });
 
-function moveCenter() {
-    $('#lg-pic').css({
-    left: (winWidth - divWidth) / 2,
-    top: (winHeight - divHeight) / 2,
+        $('#lg-pic-list').css({
+            left: div * index * -1,
+        });
+    }
+
+    function update() {
+        div = divWidth * ratio;
+        $('#lg-pic').width(div);
+        $('#lg-pic-list li').width(div);
+        $('#lg-pic-list').width(div * imgCount);
+        console.log(div * imgCount);
+    }
+
+    $(window).resize(function () {
+        winWidth = $(window).width();
+        ratio = winWidth / winWidthInit;
+        isResize = true;
+        moveCenter();
+        update();
     });
 
-    $('#lg-pic-list').css({
-    left: divWidth * index * -1,
-    });
-}
+    init();
 
-function updateGallery() {
-    divWidth = $('#lg-pic').width();
+    for (let i = 0; i < imgCount; i++) {
+        $('#contentButton').append('<li></li>');
+    }
+
+    $('#lg-pic').width(divWidth);
     $('#lg-pic-list li').width(divWidth);
     $('#lg-pic-list').width(divWidth * imgCount);
-}
 
-$(window).resize(function () {
-    winWidth = $(window).width();
-    winHeight = $(window).height();
+    $('#contentButton li:first').addClass('clicked');
+    $('#pic-number').text(`1 / ${imgCount}`);
 
-    moveCenter();
-    updateGallery();
-});
+    $('#contentButton li').click(function () {
+        index = $(this).index();
+        if (isResize) {
+            $('#lg-pic-list').animate({
+                left: div * index * -1,
+            });
+        } else {
+            $('#lg-pic-list').animate({
+                left: divWidth * index * -1,
+            });
+        }
 
-initializeGallery();
-
-for (let i = 0; i < imgCount; i++) {
-    $('#contentButton').append('<li></li>');
-}
-
-$('#contentButton li:first').addClass('clicked');
-$('#pic-number').text(`1 / ${imgCount}`);
-
-$('#contentButton li').click(function () {
-    index = $(this).index();
-
-    $('#lg-pic-list').animate({
-    left: divWidth * index * -1,
+        $('#pic-number').text(`${index + 1} / ${imgCount}`);
+        $(this).addClass('clicked');
+        $('#contentButton li').not(this).removeClass('clicked');
     });
-
-    $('#pic-number').text(`${index + 1} / ${imgCount}`);
-    $(this).addClass('clicked');
-    $('#contentButton li').not(this).removeClass('clicked');
 });
-});
-
 // $(function () {
 
 //     $(window).resize(function(){
@@ -80,12 +88,12 @@ $('#contentButton li').click(function () {
 
 $(document).ready(function(){
     $('.answer').hide();
-    $('.fa-minus').hide();
+    $('.minus').hide();
     $('.question').click(function(){
         let slide = $(this).next('.answer')
         slide.slideToggle();
-        $(this).find('.fa-minus').toggle();
-        $(this).find('.fa-plus').toggle();
+        $(this).find('.minus').toggle();
+        $(this).find('.plus').toggle();
 
     })
 })
