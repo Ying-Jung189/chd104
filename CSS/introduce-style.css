@@ -36,7 +36,6 @@
     margin: auto;
     padding: 0.75rem 0;
 }
-
 .text-info{
     display: flex;
     flex-direction: column;
@@ -46,10 +45,23 @@
     border-radius: 50%;
     overflow: hidden;
 }
+@media screen and (min-width: 360px) {
 
-@media screen and (max-width: 768px) {
+    .pic{
+        width: 100%;
+    }
+    .text-info h4{
+        font-size: 21px;
+        padding: 1.5rem 0;
+    }
+    .text-info p{
+        font-size: 16px;
+        padding: 1rem 0;
+    }
+}
+@media screen and (min-width: 576px) {
     .text-info{
-        padding: 2.25rem;
+        padding: 1.5rem;
     }
     .pic{
         width: 75%;
@@ -59,13 +71,9 @@
     }
     .text-info h4{
         font-size: 24px;
-        padding: 1.5rem 0;
-    }
-    .text-info p{
-        font-size: 16px;
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .text-info{
         width: 45%;
         padding: 1.5rem;
@@ -75,10 +83,9 @@
     }
     .pic{
         width: 45%;
-    }
-    
+    }  
     .text-info h4{
-        font-size: 32px;
+        font-size: 28px;
         padding: 1.5rem 0;
     }
     .text-info p{

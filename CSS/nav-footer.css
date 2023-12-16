@@ -155,12 +155,12 @@ footer .copyright{
     background-color: #401202;
 }
 footer .copyright p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 3;
     color: #F0F1F3;
     text-align: center ;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
     .footer-area{
         display: none;
     }
@@ -181,7 +181,20 @@ footer .copyright p{
     footer .social-media a i{
         font-size: 36px;
     }
+    footer .copyright p{
+        padding: 9px 0;
+        font-size: 10px;
+        line-height: 3;
+    }
 }
+@media screen and (min-width: 576px) {
+    footer .copyright p{
+        padding: 3px 0;
+        font-size: 14px;
+        line-height: 3;
+    }
+}
+
 @media screen and (min-width: 769px) {
     .footer-area{
         display: flex;
@@ -206,6 +219,11 @@ footer .copyright p{
     }
     footer .mobile-footer{
         display: none;
+    }
+    footer .copyright p{
+        font-size: 16px;
+        line-height: 3;
+        padding: 0;
     }
 }
 @media screen and (min-width: 1024px) {

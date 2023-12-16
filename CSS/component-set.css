@@ -73,7 +73,12 @@ span.inform{
     width: 100%;
     background-size: cover;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
+    .banner{
+        height: 270px;
+    }
+}
+@media screen and (min-width: 576px) {
     .banner{
         height: 320px;
     }
@@ -101,9 +106,19 @@ span.inform{
 .head-bg h1{
     text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
     .head-bg{
-        top: 180px;
+        top: 160px;
+        height: 10%;
+    }
+    .head-bg h1{
+        font-size: 32px;
+        margin-top:3rem;
+    }
+}
+@media screen and (min-width: 576px) {
+    .head-bg{
+        top: 200px;
         height: 30%;
     }
     .head-bg h1{
@@ -141,16 +156,17 @@ span.inform{
     background-color: #E9E5DA;
     position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
     .wrap{
-        max-width: 92%;
-        border-radius: 15px 15px 0 0;
+        max-width: 90%;
+        border-radius: 25px 25px 0 0;
     }
+}
+@media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 769px) {
     .wrap{
         max-width: 92%;
-        border-radius: 25px 25px 0 0;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -159,9 +175,13 @@ span.inform{
     }
 }
 
+@media screen and (min-width: 360px) {
+    .wrap-item{
+        padding: 4rem 2.25rem 4.5rem 2.25rem;
+    }
+}
 
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) {
     .wrap-item{
         padding: 4rem 2.25rem 4.5rem 2.25rem;
     }
