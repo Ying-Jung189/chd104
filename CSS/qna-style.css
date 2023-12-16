@@ -3,7 +3,7 @@
 }
 
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 768px) {
     .bread-crumbs ul{
         display: none;
     }
@@ -35,56 +35,124 @@
     }
 }
 
+.illus{
+    background-image: url(../images/bread-illus/bread-1.png) ,
+    url(../images/bread-illus/bread-3.png) ,
+    url(../images/bread-illus/bread-4.png);
+
+    background-repeat: no-repeat, no-repeat, no-repeat ,no-repeat;
+    background-position:
+    top right 4rem,
+    top 33% left,
+    bottom 0 right ,
+    bottom 30px left 10px;
+    background-size: 20%;
+}
+@media screen and (min-width: 360px) {
+    .illus{
+        background-position:
+        top right 4rem,
+        bottom 0 right ,
+        bottom 30px left 10px;
+        background-size: 15%;
+    }
+}
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 768px) {
+    .illus{
+        background-position:
+        top right 3rem,
+        bottom 0 right ,
+        bottom 15px left 10px;
+    }
+}  
+@media screen and (min-width: 1024px) {
+    .illus{
+        background-position:
+        top right 3rem,
+        bottom 0 right ,
+        bottom 15px left 10px;
+    }
+}
+
 .item{
     max-width: 1000px;
     margin: auto;
     padding: 1rem 0px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
     .item{
         width: 80vw;
     }
-}
-@media screen and (min-width: 769px) {
-    .item{
-        width: 80vw;
-    }
-}   
+} 
 @media screen and (min-width: 1024px) {
     .item{
         width: 90vw;
     }
 }
 .question{
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    cursor: pointer;
-    
-    border: #60222B 2px solid;
-    border-radius: 50px;
-    align-items: center;
+    cursor: pointer;    
+    align-items: center; 
 }
-@media screen and (max-width: 768px) {
+.question .icon{
+    align-self: flex-start;
+    padding-top: .45rem;
+}
+@media screen and (min-width: 360px) {
+    .item{
+        width: 80vw;
+    }
     .question{
         padding: 0 1.5rem;
+        border-radius: 20px;
+        border: #60222B 1.5px solid;
+    }
+    .question h5{
+        width: 90%;
+        font-size: 16px;
+        line-height: 2rem;
+    }
+    .question .icon{
+        padding-top: .5rem;
+    }
+    .question i{
+        font-size: 18px;
+        font-weight: bold;
+    }
+} 
+@media screen and (min-width: 576px) {
+    .question{
+        padding: 0 1.5rem;
+        border-radius: 50px;
     }
     .question h5{
         font-size: 21px;
         line-height: 3rem;
     }
+    .question .icon{
+        padding-top: .85rem;
+    }
     .question i{
         font-size: 21px;
         font-weight: bold;
     }
-}
+} 
 @media screen and (min-width: 769px) {
     .question{
         padding: 0 3rem;
+        border: #60222B 1.5px solid;
     }
     .question h5{
         font-size: 24px;
         line-height: 4rem;
+    }
+    .question .icon{
+        padding-top: 1.3rem;
     }
     .question i{
         font-size: 24px;

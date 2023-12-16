@@ -44,22 +44,31 @@
     url(../images/bread-illus/bread-1.png) ;
 
     background-repeat: no-repeat, no-repeat, no-repeat ;
-    background-size: 15%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
     .illus{
         background-position:
         top 1% left 0,
-        bottom 60px right 5% ,
-        bottom 60px left 5%;
+        bottom 0 right 5% ,
+        bottom 0 left 5%;
+        background-size: 20%;
+    }    
+}
+@media screen and (min-width: 576px) {
+    .illus{
+        background-position:
+        top 1% left 0,
+        bottom 100px right 3% ,
+        bottom 0px left 0%;
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .illus{
         background-position:
         top 25% left 0,
         bottom 45px right 15% ,
         bottom 45px left 15%;
+        background-size: 15%;
     }
 }   
 @media screen and (min-width: 1024px) {
@@ -224,7 +233,7 @@ a .news-info .tag-time{
     padding-top: 2rem;
     padding-bottom: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
     .row a:first-child{
         display: block;
     }
@@ -233,11 +242,18 @@ a .news-info .tag-time{
     }
     .card .samepic span{ 
         top: 60%;
-        left: 26%;
+        left: 22%;
         font-size: 24px;
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 576px) {
+    .card .samepic span{ 
+        top: 60%;
+        left: 20%;
+        font-size: 21px;
+    }
+}
+@media screen and (min-width: 768px) {
     .row a:first-child{
         display: none;
     }
@@ -246,7 +262,7 @@ a .news-info .tag-time{
     }
     .card .samepic span{ 
         top: 60%;
-        left: 28%;
+        left: 24%;
         font-size: 24px;
     }
 }   
@@ -260,7 +276,6 @@ a .news-info .tag-time{
 .pages{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     margin-top: 5rem;
 }
 .pages a{    
@@ -277,9 +292,32 @@ a .news-info .tag-time{
     color: #F0F1F3;
     overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
     .pages{
+        margin-top: 2rem;
+        justify-content: space-between;
+    }
+    .pages a{    
+        padding: 0.4rem .8rem;
+        font-size: 16px;
+    }
+    .pages a:nth-last-child(2){
+        padding: 0.4rem 1rem;
+        font-size: 14px;
+    }
+    .pages a:nth-child(5){
+        padding: 0.5rem 0.9rem;
+    }
+}
+@media screen and (min-width: 576px) {
+    .pages{
+        justify-content: center;
         margin-top: 4rem;
+    }
+    .pages a:nth-last-child(2){
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        font-size: 21px;
     }
     .pages a{    
         padding: 0.5rem 1rem;
@@ -290,9 +328,10 @@ a .news-info .tag-time{
         padding: 0.5rem 0.9rem;
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .pages{
         margin-top: 5rem;
+        justify-content: center;
     }
     .pages a{    
         margin: 0.75rem;

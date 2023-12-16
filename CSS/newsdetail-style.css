@@ -33,19 +33,41 @@
     }
 }
 
-.illus{
-    background-image: url(../images/bread-illus/bread-1.png) ,
-    url(../images/bread-illus/bread-2.png) ,
-    url(../images/bread-illus/bread-4.png) ,
-    url(../images/bread-illus/bread-6.png);
-
-    background-repeat: no-repeat, no-repeat, no-repeat ,no-repeat;
-    background-position:
-    top right 4rem,
-    top 35% left,
-    bottom 30% right ,
-    bottom 30px left 10px;
-    background-size: 15%;
+@media screen and (min-width: 360px) {
+    .illus{
+        background-image: url(../images/bread-illus/bread-1.png) ,
+        url(../images/bread-illus/bread-6.png);
+    
+        background-repeat: no-repeat, no-repeat;
+        background-position:
+        top 3rem right 4rem,
+        bottom 30px left 10px;
+        background-size: 20%;
+    }
+}
+@media screen and (min-width: 576px) {
+    .illus{
+        background-position:
+        top 0 right 4rem,
+        bottom 0 left 10px;
+        background-size: 20%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .illus{
+        background-image: url(../images/bread-illus/bread-1.png) ,
+        url(../images/bread-illus/bread-2.png) ,
+        url(../images/bread-illus/bread-4.png) ,
+        url(../images/bread-illus/bread-6.png);
+    
+        background-repeat: no-repeat, no-repeat, no-repeat ,no-repeat;
+        background-position:
+        top 3rem right 4rem,
+        top 35% left,
+        bottom 30% right ,
+        bottom 30px left 10px;
+        background-size: 15%;
+    }
 }
 
 .news-article{
@@ -61,9 +83,6 @@
     align-self: flex-end;
     padding-top: 1rem;
 }
-.title h2{
-    font-size: 42px;
-}
 .text ul li{
     line-height: 180%;
 }
@@ -71,7 +90,15 @@
     line-height: 180%;
     padding: 1.25rem 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
+    .title h2{
+        font-size: 26px;
+    }
+    .up-info .time{
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 576px) {
     .title h2{
         font-size: 32px;
     }
@@ -88,9 +115,12 @@
         width: 100%;
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .title h2{
-        font-size: 36spx;
+        font-size: 36px;
+    }
+    .up-info .time{
+        font-size: 18px;
     }
     .news-article .text{
         margin-top: 3rem;

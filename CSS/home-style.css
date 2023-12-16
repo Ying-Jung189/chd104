@@ -1,12 +1,28 @@
 
 a.more-btn{
     text-decoration: none;
-    font-size: 24px;
     font-weight: bold;
-    padding: 16px 160px;
-    border-radius: 40px;
+    border-radius: 50px;
     border: 3px solid;
     color: #60222B;
+}
+@media screen and (min-width: 360px) {
+    a.more-btn{
+        font-size: 21px;
+        padding: .5rem 6rem;
+    }
+}
+@media screen and (min-width: 576px) {
+    a.more-btn{
+        font-size: 24px;
+        padding: .75rem 8rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    a.more-btn{
+        font-size: 24px;
+        padding: 1rem 10rem;
+    }
 }
 
 .home-banner{
@@ -20,9 +36,27 @@ a.more-btn{
 .home-banner h1, .home-banner h2{
     position: absolute;
     background-color: rgba(237,167,61,60%);
-    border-radius: 20px;
+    height: 10%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
+    .home-banner{
+        height: 340px;
+    }
+    .home-banner h1, .home-banner h2{
+        font-size: 28px;
+        padding: .75rem;
+        border-radius: 15px;
+    }
+    .home-banner h1{
+        right: 120px;
+        bottom: 200px;
+    }
+    .home-banner h2{
+        right: 10px;
+        bottom: 130px;
+    }
+}
+@media screen and (min-width: 576px) {
     .home-banner{
         height: 420px;
     }
@@ -39,13 +73,14 @@ a.more-btn{
         bottom: 140px;
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .home-banner{
         height: 640px;
     }
     .home-banner h1, .home-banner h2{
         font-size: 48px;
         padding: 25px;
+        border-radius: 20px;
     }
     .home-banner h1{
         right: 350px;
@@ -62,7 +97,7 @@ a.more-btn{
     }
     .home-banner h1, .home-banner h2{
         font-size: 52px;
-        padding: 25px;
+        padding: 1rem;
     }
     .home-banner h1{
         right: 500px;
@@ -84,12 +119,17 @@ a.more-btn{
     position: absolute;
     z-index:0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
+    .homehead-bg{
+        top: 230px;
+    }
+}
+@media screen and (min-width: 576px) {
     .homehead-bg{
         top: 300px;
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .homehead-bg{
         top: 500px;
     }
@@ -136,29 +176,47 @@ a.more-btn{
     display: flex;
     flex-wrap: wrap;
 } 
-.concept-pic img.left{
-    width: 50%;
-    padding-right: 20px;
-}
-.concept-pic img.right{
-    width: 40%;
-}
 .concept .concept-text{
     width: 40%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
     .concept{
-        padding: 3rem 3.25rem 4rem 3.25rem;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+    .concept-pic img.left{
+        width: 90%;
+    }
+    .concept-pic img.right{
+        display: none;
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 576px) {
+    .concept{
+        padding: 3rem 3rem 4rem 3rem;
+    }
+    .concept-pic img.left{
+        width: 50%;
+        padding-right: 0.5rem;
+    }
+    .concept-pic img.right{
+        display: block;
+        width: 40%;
+    }
+}
+@media screen and (min-width: 768px) {
     .concept{
         padding: 3.5rem 4rem 4.5rem 4rem;
+    }
+    .concept-pic img.left{
+        padding-right: .5rem;
     }
 }   
 @media screen and (min-width: 1024px) {
     .concept{
         padding: 5.75rem 6rem 7.5rem 6rem;
+    }
+    .concept-pic img.left{
+        padding-right: 1rem;
     }
 }
 
@@ -170,6 +228,7 @@ a.more-btn{
     justify-content: center;
     border-radius: 25px;
 }
+
 .illus{
     background-image: url(../images/bread-illus/bread-1.png) ,
     url(../images/bread-illus/bread-2.png) ,
@@ -177,12 +236,44 @@ a.more-btn{
     url(../images/bread-illus/bread-4.png);
 
     background-repeat: no-repeat, no-repeat, no-repeat ,no-repeat;
-    background-position:
-    top right 4rem,
-    top 40% left,
-    bottom 30% right,
-    bottom 30px left 10px;
-    background-size: 20%;
+}
+@media screen and (min-width: 360px) {
+    .illus{
+        background-position:
+        top right 2rem,
+        top 38% left,
+        bottom 38% right,
+        bottom 20px left 10px;
+        background-size: 25%;
+    }
+}
+@media screen and (min-width: 576px) {
+    .illus{
+        background-position:
+        top right 4rem,
+        top 38% left,
+        bottom 38% right,
+        bottom 30px left 10px;
+        background-size: 20%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .illus{
+        background-position:
+        top right 4rem,
+        top 38% left,
+        bottom 40% right,
+        bottom 30px left 10px;
+    }
+}   
+@media screen and (min-width: 1024px) {
+    .illus{
+        background-position:
+        top right 4rem,
+        top 40% left,
+        bottom 30% right,
+        bottom 30px left 10px;
+    }
 }
 .pick-up h2{
     margin: auto;
@@ -191,7 +282,6 @@ a.more-btn{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 0 0 2rem;
     width: 50%;
 }
 .pick-up .item p{
@@ -200,7 +290,6 @@ a.more-btn{
 
 .pick-up  a.more-btn{
     margin: 1.5rem auto 5.25rem auto;
-
 } 
 @media screen and (max-width: 768px) {
     .pick-up h2{
@@ -224,10 +313,11 @@ a.more-btn{
         width: 100%;
     }
     .pick-up .pickup-text{
+        padding-top: 1rem;
         width: 100%;
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     .pick-up h2{
         margin: auto;
         font-size: 42px;
@@ -254,6 +344,7 @@ a.more-btn{
         width: 100%;
     }
     .pick-up .pickup-text{
+        padding: 0 0 0 2rem;
         width: 50%;
     }
 

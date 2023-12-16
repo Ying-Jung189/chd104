@@ -51,12 +51,15 @@
         width: 100%;
     }
     .text-info h4{
-        font-size: 21px;
+        font-size: 24px;
         padding: 1.5rem 0;
     }
     .text-info p{
         font-size: 16px;
         padding: 1rem 0;
+    }
+    .wrap .item{
+        padding: 1.5rem 0;
     }
 }
 @media screen and (min-width: 576px) {
@@ -70,7 +73,10 @@
         margin-left: auto;
     }
     .text-info h4{
-        font-size: 24px;
+        font-size: 26px;
+    }
+    .wrap .item{
+        padding: 0.75rem 0;
     }
 }
 @media screen and (min-width: 768px) {
