@@ -139,6 +139,15 @@
     border-color: #60222B;    
     text-align: center;
     padding: 0.75rem;
+    transition:background-color 0.5s ease,
+    border-color 0.5s ease,
+    color 0.5s ease ;
+}
+.more-btn a:hover{
+    background-color: #60222B;
+    border-color:#60222B ;
+    color: #E9E5DA; 
+    background-position: -100% 0;
 }
 @media screen and (max-width: 768px) {
     .top-news{
@@ -199,15 +208,30 @@ a .card{
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 } 
+a:hover img{
+    transform: scale(1.02);
+    opacity: 0.7;
+}
+a .card img{
+    border-radius: 25px 25px 0 0;
+    transition: transform 0.5s ease,
+    opacity 0.5s ease;
+}
 .card .samepic{
     position: relative;
-
+}
+a:hover .samepic span{
+    transform: scale(1.1);
+    opacity: 0.6;
 }
 .card .samepic span{
     position: absolute;
     font-weight: bold;
     color: #60222B;
+    transition: transform 0.5s ease,
+    opacity 0.5s ease;
 }
 a .card .news-info{
     padding: 1.5rem;
@@ -286,6 +310,20 @@ a .news-info .tag-time{
     border: #60222B 2px solid;
     color: #60222B;
     border-radius: 50%;
+}
+.pages a:not(:nth-last-child(2)){    
+    transition: color 0.5s ease,
+    background-color 0.5s ease;
+}
+.pages a:not(:nth-last-child(2)):hover{    
+    color: #E9E5DA;
+    background-color: #60222B;
+}
+.pages a:not(:nth-last-child(2)) i{    
+    transition: color 0.5s ease,
+}
+.pages a:not(:nth-last-child(2)):hover i{    
+    color: #E9E5DA;
 }
 .pages a.current{
     background-color: #60222B;

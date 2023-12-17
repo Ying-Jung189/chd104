@@ -202,9 +202,15 @@ span.inform{
     bottom: 100px;
     right: 2%;
 }
-.to-top i{
+a.to-top i{
     font-size: 48px;
+    transition: color 0.5s ease;
 }
+a.to-top i:hover{
+    color: #73313B;
+}
+/*沒出現*/
+
 .close{
     display: none;
 }
@@ -227,6 +233,10 @@ span.inform{
         font-size: 48px;
         margin: 19px 0;
         color: #F0F1F3;
+        transition: color 0.5s ease;
+    }
+    .media a i:hover{
+    color: #73313B;
     }
     .media a i.change-color{
         color: #401202;

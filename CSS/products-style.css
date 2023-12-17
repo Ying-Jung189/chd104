@@ -88,12 +88,22 @@
     box-sizing: border-box;
     border-radius: 50px;
     border: #60222B 2px solid;
+    transition: background-color 0.5s ease,
+    border-color 0.5s ease;
+}
+.select-section ul li:hover{
+    background-color: #60222B;
+    border-color:#60222B ;
 }
 .select-section li a{
     font-weight: bold;
     color: #60222B;
     display: block;
     text-align: center;
+    transition:color 0.5s ease ;
+}
+.select-section li a:hover{
+    color: #E9E5DA; 
 }
 
 @media screen and (min-width: 360px) {
@@ -161,9 +171,16 @@ a.card{
     background-color: #F0F1F3;
     text-decoration: none;
     border-radius: 25px;
+    overflow: hidden;
+}
+a.card:hover img{
+    transform: scale(1.02);
+    opacity: 0.7;
 }
 a.card img{
     border-radius: 25px 25px 0 0;
+    transition: transform 0.5s ease,
+    opacity 0.5s ease;
 }
 .info{
     display: flex;
@@ -229,6 +246,20 @@ a.card h5{
     border: #60222B 2px solid;
     color: #60222B;
     border-radius: 50%;
+}
+.pages a:not(:nth-last-child(2)){    
+    transition: color 0.5s ease,
+    background-color 0.5s ease;
+}
+.pages a:not(:nth-last-child(2)):hover{    
+    color: #E9E5DA;
+    background-color: #60222B;
+}
+.pages a:not(:nth-last-child(2)) i{    
+    transition: color 0.5s ease,
+}
+.pages a:not(:nth-last-child(2)):hover i{    
+    color: #E9E5DA;
 }
 .pages a.current{
     background-color: #60222B;

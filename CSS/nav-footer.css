@@ -31,9 +31,14 @@
     .nav-icons ul li{
         display: flex;  
         padding: 1rem;
+        cursor: pointer;
     }
     .nav-icons ul i{
         font-size: 24px;
+        transition: transform 0.5s ease;
+    }
+    .nav-icons ul i:hover{
+        transform: translate(0,-5px);
     }
     nav .hb{
         display: none;
@@ -53,12 +58,12 @@
         justify-content: center;
         padding: 4rem 0 3rem 0;
     }
-    /* .hb ul li{
-        padding: 1rem 8rem;
-    } */
-    /* .hb ul li ~ li{
-        border-top: 1px solid #60222B;
-    } */
+    .hb ul li{
+        transition: transform 0.5s ease;
+    }
+    .hb ul li:hover:not(:last-child){
+        transform: translate(0,-5px);
+    }
     .hb li:not(:last-child) a{
         display: block;
         font-size: 18px;
@@ -71,9 +76,13 @@
     .hb li.social-media i{
         font-size: 32px;
         padding: 1.5rem 1rem 1rem 1rem;
+        transition: color 0.5s ease;
+    }
+    .hb li.social-media i:hover{
+        color: #73313B;
     }
 }
-@media screen and (min-width: 769px){
+@media screen and (min-width: 768px){
     header{
         display: flex;
         width: 100%;
@@ -113,6 +122,12 @@
         line-height: 5rem;
         font-weight: bold ;
         padding: 0.8rem;
+    }
+    .select-area ul li{
+        transition: transform 0.5s ease;
+    }
+    .select-area ul li:hover{
+        transform: translate(0,-5px);
     }
     .select-area ul a i{
         font-size: 21px;
@@ -178,6 +193,12 @@ footer .copyright p{
     footer .social-media a{
         padding: 1rem;
     }
+    .mobile-footer .social-media i{
+        transition: color 0.5s ease;
+    }
+    .mobile-footer .social-media i:hover{
+        color: #73313B;
+    }
     footer .social-media a i{
         font-size: 36px;
     }
@@ -212,6 +233,12 @@ footer .copyright p{
         justify-content: end;
         margin: 0;
     }    
+    .foot-select li{
+        transition: transform 0.5s ease;
+    }
+    .foot-select li:hover{
+        transform: translate(0,-5px);
+    }
     .foot-select ul a{
         font-weight: bold ;
         line-height: 70px;

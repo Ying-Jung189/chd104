@@ -66,20 +66,17 @@
         background-repeat: no-repeat, no-repeat, no-repeat ,no-repeat;
         background-position:
         top 3rem right 4rem,
-        bottom 50% right ,
+        bottom 45% right ,
         bottom 30px left 10px;
         background-size: 15%;
     }
 }
 
 @media screen and (min-width: 360px) {
-    .order-section .sm-pic-list{
+    .order-section .mdsize-pic{
         display: none;
     }    
-    .order-section .pic img.full{
-        display: none;
-    }
-    .lg-pic {
+    .smsize-pic {
         border-radius: 40px;
         aspect-ratio: 1/1;
         width: 100%;
@@ -87,29 +84,19 @@
         overflow: hidden;
     }
     
-    .lg-pic #lg-pic-list {
+    .smsize-pic #container-list {
 
         position: relative;
     }
     
-    .lg-pic #lg-pic-list li {
+    .smsize-pic #container-list li {
         float: left;
     }
-    .lg-pic #lg-pic-list img {
+    .smsize-pic #container-list img {
         aspect-ratio: 1/1;
         width: 100%;
     } 
-    span#pic-number{
-        position: absolute;
-        right: 2rem;
-        top: 18rem;
-        background-color: #9F9393;
-        font-size: 18px;
-        font-weight: bold;
-        color: #F0F1F3;
-        padding: 0.5rem 1rem;
-        border-radius: 50px;
-    }/* 
+    /* 
     .move-icon{
         position: relative;
         width: 100%;
@@ -132,8 +119,8 @@
         width: 100%;
     } 
     #contentButton li{
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
     
         background-color: #9F9393;
@@ -142,10 +129,18 @@
     }
     #contentButton li.clicked{
         background-color: #F0F1F3;
-    }  
-    .order-section .pic>img{
-        display: none;
     }
+    span#pic-number{
+        position: absolute;
+        right: 2rem;
+        top: 18rem;
+        background-color: #9F9393;
+        font-size: 16px;
+        font-weight: bold;
+        color: #F0F1F3;
+        padding: 0.25rem 0.75rem;
+        border-radius: 50px;
+    }  
 }
 @media screen and (min-width: 576px) {
     #contentButton{
@@ -154,6 +149,10 @@
     span#pic-number{
         right: 4rem;
         top: 28rem;
+        padding: 0.5rem 1rem;
+    }
+    span#pic-number{
+        font-size: 18px;
         padding: 0.5rem 1rem;
     }
 }
@@ -165,27 +164,58 @@
     .order-section .pic{
         width: 52%;
     }
-    .order-section .pic img.full{
-        display: block;
-    }
-    .order-section .lg-pic{
+    .order-section .smsize-pic{
         display: none;
     }
-    .order-section .sm-pic-list{
+    .order-section .mdsize-pic{
         display: block;
+    }
+    .order-section .sm-pic-list{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 1rem;
+        padding-top: 0.5rem;
     }
     .sm-pic-list .sm-pic{
-        width: 23%;
+        cursor: pointer;
+        width: 18%;
+        padding: 0.5rem 0;
     }
+    .sm-pic img{
+        border-radius: 20px;
+    }
+    span.pic-number{
+        position: absolute;
+        left: 17rem;
+        top: 25rem;
+        background-color: #9F9393;
+        font-size: 18px;
+        font-weight: bold;
+        color: #F0F1F3;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+    }  
+}  
+@media screen and (min-width: 900px) {
+    span.pic-number{
+        left: 21rem;
+        top: 29rem;
+    }  
 }  
 @media screen and (min-width: 1024px) {
     .order-section .sm-pic-list{
-        padding-top: 1.25rem;
+        padding-top: 1rem;
     }
+    span.pic-number{
+        left: 27rem;
+        top: 33rem;
+    }  
+}  
+@media screen and (min-width: 1200px) {
+    span.pic-number{
+        left: 32rem;
+        top: 38rem;
+    }  
 }  
 
 .tag span{    
@@ -233,9 +263,25 @@ margin: 0;
     border: 1px #E6E6E6 solid;
     border-radius: 10px;
 }
+.btn-plus, .btn-minus{
+    cursor: pointer;
+    flex-grow: 1;
+    padding: 0.55rem 1.2rem;
+}
+/* .btn-plus:hover , .btn-minus:hover{
+    background-color:#e6e1dd;
+    opacity: 0.1;
+} */
+.disable{
+    color: #9F9393;
+    cursor: not-allowed;
+    opacity: 40%;
+}
+
+
 .btn{
     box-sizing: border-box;
-    margin: 10px 0;
+    margin: .5rem 0;
 }
 
 .btn button{
@@ -247,6 +293,11 @@ margin: 0;
     border: 0;
     background-color: #60222B;
     color: #E6E6E6;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+.btn button:hover{
+    background-color: #73313B;
 }
 @media screen and (min-width: 360px) {
     .buy h2{
@@ -318,11 +369,15 @@ ul label.tabs-y{
 .tab-container input[type ="radio"] {
     display: none;
 }
+#tab-preserve:checked ~.text>.preserve {
+    animation: fadeInOut 0.5s ease;
+}
 .yummy{
     display: none;
 }
 #tab-yummy:checked ~.text>.yummy  {
     display: block;
+    animation: fadeInOut 0.5s ease;
 }
 #tab-yummy:checked ~ul.tab-title li label.tabs-y {
     border-radius: 25px 25px 0 0 ;
@@ -339,6 +394,10 @@ ul label.tabs-y{
     color: #9F9393;
     border: 0;
     margin-bottom: 0px;
+}
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 label{
     cursor: pointer;
@@ -357,6 +416,10 @@ label{
     }
     .discription .tab-container ul.tab-title{
         padding-left: 3%;
+    }
+    .tab-title {
+        margin-bottom: -1px;
+        border-bottom: #60222B 1.5px solid;
     }
 }
 @media screen and (min-width: 576px) {
@@ -392,9 +455,17 @@ label{
         font-size: 21px;
         line-height: 180%;
     }
+    .tab-title {
+        margin-bottom: -1px;
+        border-bottom: #60222B 1.5px solid;
+    }
 }   
 @media screen and (min-width: 1024px) {
     .discription .text{
         padding: 4rem 6rem 0 6rem;
+    }
+    .tab-title {
+        margin-bottom: -1px;
+        border-bottom: #60222B 1.75px solid;
     }
 }

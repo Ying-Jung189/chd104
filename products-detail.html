@@ -90,9 +90,8 @@
                 </div>
                 <div class="order-section">
                     <div class="pic">
-                        <img class="full" src="images/product-detail/products-detail-lg.png" alt="">
-                        <div class="lg-pic" id="lg-pic">
-                            <ul id="lg-pic-list">
+                        <div class="smsize-pic" id="container">
+                            <ul id="container-list">
                                 <li><img src="images/product-detail/products-detail-lg.png"></li>
                                 <li><img src="images/product-detail/lg-pic-2.png"></li> 
                                 <li><img src="images/product-detail/lg-pic-3.png"></li>
@@ -106,19 +105,26 @@
                                 <a href id="next"><img src="/images/home/home-news-right.svg" alt=""></a>
                             </div> -->
                         </div>
-                        <div class="sm-pic-list">
-                            <div class="sm-pic">
-                                <img src="images/product-detail/pic-1.png">
-                            </div>                       
-                            <div class="sm-pic">
-                                <img src="images/product-detail/pic-2.png">
-                            </div>
-                            <div class="sm-pic">
-                                <img src="images/product-detail/pic-3.png">
-                            </div>
-                            <div class="sm-pic">
-                                <img src="images/product-detail/pic-4.png">
-                            </div> 
+                        <div class="mdsize-pic">
+                            <img class="full" src="images/product-detail/products-detail-lg.png" alt="">
+                            <ul class="sm-pic-list">
+                                <li class="sm-pic">
+                                    <img src="images/product-detail/products-detail-lg.png">
+                                </li>
+                                <li class="sm-pic">
+                                    <img src="images/product-detail/lg-pic-2.png">
+                                </li>
+                                <li class="sm-pic">
+                                    <img src="images/product-detail/lg-pic-3.png">
+                                </li>
+                                <li class="sm-pic">
+                                    <img src="images/product-detail/lg-pic-4.png">
+                                </li>
+                                <li class="sm-pic">
+                                    <img src="images/product-detail/lg-pic-5.png">
+                                </li>
+                            </ul>
+                            <span class="pic-number"></span>
                         </div>
                     </div>
                     <div class="buy">
@@ -132,10 +138,11 @@
                         <div class="price-amount">
                             <div class="price"><span>$50</span></div>
                             <div class="amount">
-                                <span class="btn-minus"><i class="fa-solid fa-minus" style="color: #60222b;"></i>
+                                <span class="btn-minus disable" id="btn-minus"><i class="fa-solid fa-minus" style="color: #60222b;"></i>
                                 </span>
-                                <input type="number" value="1" min="1" class="buy-number" >
-                                <span class="btn-plus">
+                                <input type="number" value="1" min="1" max="10" class="buy-number"
+                                id ="buy-number"  >
+                                <span class="btn-plus" id="btn-plus">
                                     <i class="fa-solid fa-plus" style="color: #60222b;"></i>
                                 </span>
                             </div>

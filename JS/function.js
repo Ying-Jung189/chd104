@@ -1,30 +1,31 @@
+//幻燈片+縮放
 $(function () {
     let divWidth, div, winWidth, winWidthInit, imgCount, index, ratio = 0;
     let isResize = false;
 
     function init() {
-        divWidth = $('#lg-pic').width();
+        divWidth = $('#container').width();
         winWidthInit = $(window).width();
-        imgCount = $('#lg-pic-list li').length;
+        imgCount = $('#container-list li').length;
         moveCenter();
     }
 
     function moveCenter() {
-        $('#lg-pic').css({
+        $('#container').css({
             left: (winWidth - divWidth) / 2,
             top: 0
         });
 
-        $('#lg-pic-list').css({
+        $('#container-list').css({
             left: div * index * -1,
         });
     }
 
     function update() {
         div = divWidth * ratio;
-        $('#lg-pic').width(div);
-        $('#lg-pic-list li').width(div);
-        $('#lg-pic-list').width(div * imgCount);
+        $('#container').width(div);
+        $('#container-list li').width(div);
+        $('#container-list').width(div * imgCount);
         console.log(div * imgCount);
     }
 
@@ -42,9 +43,9 @@ $(function () {
         $('#contentButton').append('<li></li>');
     }
 
-    $('#lg-pic').width(divWidth);
-    $('#lg-pic-list li').width(divWidth);
-    $('#lg-pic-list').width(divWidth * imgCount);
+    $('#container').width(divWidth);
+    $('#container-list li').width(divWidth);
+    $('#container-list').width(divWidth * imgCount);
 
     $('#contentButton li:first').addClass('clicked');
     $('#pic-number').text(`1 / ${imgCount}`);
@@ -52,11 +53,11 @@ $(function () {
     $('#contentButton li').click(function () {
         index = $(this).index();
         if (isResize) {
-            $('#lg-pic-list').animate({
+            $('#container-list').animate({
                 left: div * index * -1,
             });
         } else {
-            $('#lg-pic-list').animate({
+            $('#container-list').animate({
                 left: divWidth * index * -1,
             });
         }
@@ -66,27 +67,10 @@ $(function () {
         $('#contentButton li').not(this).removeClass('clicked');
     });
 });
-// $(function () {
-
-//     $(window).resize(function(){
-//         moveCenter()
-//     })
-
-//     function moveCenter(){
-//         // let divHeight = $('#lg-pic').height()
-//         let divWidth = $('#lg-pic').width() 
-//         console.log(divWidth)
-//         // let winHeight = $(window).height()
-//         // let winWidth = $(window).width()	
-
-//         // $('#inCenter').css({
-//         //     left :(winWidth - divWidth) / 2 ,
-//         //     top :(winHeight - divHeight) / 2,
-//         // })
-//     }
-// })
 
 $(document).ready(function(){
+
+    //q/a展開
     $('.answer').hide();
     $('.minus').hide();
     $('.question').click(function(){
@@ -94,7 +78,85 @@ $(document).ready(function(){
         slide.slideToggle();
         $(this).find('.minus').toggle();
         $(this).find('.plus').toggle();
-
     })
+
+    //hover切換圖片
+    $('#left-btn').hover(
+        function(){
+            $('#left-btn').addClass('hidden'); // 添加 CSS 类，触发过渡效果
+        setTimeout(function() {
+            $('#left-btn').attr("src","/images/home/home-news-hover.svg"); // 切换图片
+            $('#left-btn').removeClass('hidden'); // 移除 CSS 类
+        }, 200); 
+        },
+        function(){
+            $('#left-btn').attr("src","/images/home/home-news-left.svg");
+        }
+    )
+    $('#right-btn').hover(
+        function(){
+            $('#right-btn').addClass('hidden'); // 添加 CSS 类，触发过渡效果
+            setTimeout(function() {
+                $('#right-btn').attr("src","/images/home/home-news-hoverR.svg"); // 切换图片
+                $('#right-btn').removeClass('hidden'); // 移除 CSS 类
+            }, 200); 
+        },
+        function(){
+            $('#right-btn').attr("src","/images/home/home-news-right.svg");
+        }
+    )
+
+    //點了換圖片
+    let imgAmount = $('.sm-pic-list li').length;
+    $('.pic-number').text(`1 / ${imgAmount}`);
+    $('.sm-pic img').click(function(){
+        let changeImg = $(this).attr('src');
+        let index = $(this).parent().index() + 1;
+        $('.pic-number').text(`${index} / ${imgAmount}`);
+        $('.full').fadeOut(100, function(){
+            $('.full').attr("src",changeImg);
+            $('.full').fadeIn(400);
+        })
+    })
+    
+    //數量加減
+    $('#btn-minus').click(function(){
+        let amount = +$('#buy-number').val();
+        let minAmount = +$('#buy-number').attr('min');
+        let maxAmount = +$('#buy-number').attr('max');
+        if (amount > 2) {
+            $('#buy-number').val(amount - 1);
+            $('#btn-minus').removeClass('disable');
+        } else if (amount <= minAmount + 1) {
+            $('#buy-number').val(1);
+            $('#btn-minus').addClass('disable');
+        }
+        if(amount <= maxAmount){
+            $('#btn-plus').removeClass('disable'); // 解禁增加按钮
+        }
+    });
+    
+    $('#btn-plus').click(function(){
+        let amount = +$('#buy-number').val();
+        let maxAmount = +$('#buy-number').attr('max');
+    
+        $('#buy-number').val(amount + 1);
+        
+        if (amount >= 1) {
+            $('#btn-minus').removeClass('disable');
+        }
+    
+        if (amount >= maxAmount - 1) { 
+            $('#buy-number').val(10);
+            $('#btn-plus').addClass('disable');
+            $('#btn-minus').removeClass('disable'); // 解禁减少按钮
+        }
+    });
+    
+    
+    
+    
+
 })
+
 

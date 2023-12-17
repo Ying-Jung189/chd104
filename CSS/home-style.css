@@ -5,6 +5,14 @@ a.more-btn{
     border-radius: 50px;
     border: 3px solid;
     color: #60222B;
+    transition:background-color 0.5s ease,
+    border-color 0.5s ease,
+    color 0.5s ease ;
+}
+a.more-btn:hover{
+    background-color: #60222B;
+    border-color:#60222B ;
+    color: #E9E5DA; 
 }
 @media screen and (min-width: 360px) {
     a.more-btn{
@@ -367,30 +375,23 @@ a.more-btn{
     display: flex;
     flex-wrap: wrap;  
     flex-direction: column;
-    row-gap: 6.25rem;
     position: relative;
     align-items: center;
 }
-.news .news-container{
-    position: relative;
-    overflow: hidden;
-}
-.news .news-wrap{
-    display: flex;
-    flex-wrap: wrap;
+.news ul.news-wrap{
     align-items: center;
     padding: 0 5rem;
     margin-bottom: 1rem;
 }
-.news .news-wrap a.card img{
+.news ul.news-wrap a.card img{
     width: 100%;
     vertical-align: middle; 
 }
-.news .news-wrap a .below-info {
+.news ul.news-wrap a .below-info {
     display: flex;
     justify-content: space-between;
 }
-.news .news-wrap a h5{
+.news ul.news-wrap a h5{
     display: inline-block;
     margin: 0;
     padding: 1.25rem 0 1.5rem 0;
@@ -405,6 +406,13 @@ a.more-btn{
     position: absolute;
     width: 100%;
     top: 40%;
+}
+
+#left-btn, #right-btn{
+    transition: opacity 0.5s ease;
+}
+#left-btn.hidden, #right-btn.hidden{
+    opacity: 0;
 }
 .move-icon a.left-btn{
     left: 16px;
@@ -426,7 +434,28 @@ a.more-btn{
     margin: auto;
     margin-bottom: 5.25rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 360px) {
+    .news{
+        row-gap: 2rem;
+    }
+    #container{
+        border-radius: 40px;
+        aspect-ratio: 3/1.2;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    #container-list{
+        position: relative;
+    }
+    #container-list li {
+        float: left;
+    } 
+    #container-list li a{
+        aspect-ratio: 5/4;
+    } 
+}
+@media screen and (min-width: 768px) {
     .news{
         row-gap: 3rem;
     }
@@ -434,10 +463,10 @@ a.more-btn{
         font-size: 32px;
         padding-top: 2.25rem;
     }
-    .news .news-wrap a h5{
+    .news ul.news-wrap a h5{
         font-size: 21px;
     }
-    .news .news-wrap a .time{
+    .news ul.news-wrap a .time{
         font-size: 16px;
     }
     
@@ -446,7 +475,7 @@ a.more-btn{
     .news{
         row-gap: 4.5rem;
     }
-    .news .news-wrap a.card{
+    .news ul.news-wrap a.card{
         padding: 0px 0.75rem; 
         width: 30%;
     }
@@ -454,10 +483,10 @@ a.more-btn{
         font-size: 42px;
         padding-top: 4rem;
     }
-    .news .news-wrap a h5{
+    .news ul.news-wrap a h5{
         font-size: 24px;
     }
-    .news .news-wrap a .time{
+    .news ul.news-wrap a .time{
         font-size: 18px;
     }
     .news .samepic span{
@@ -472,6 +501,21 @@ a.more-btn{
     .news{
         row-gap: 6.25rem;
     }
+    #container{
+        border-radius: 40px;
+        aspect-ratio: 3.8/1.2;
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    #container-list{
+        position: relative;
+    }
+    #container-list li {
+        margin: 0 .5rem;
+        width: 30%;
+        float: left;
+    } 
     .news h2{
         padding-top: 6.25rem;
     }
