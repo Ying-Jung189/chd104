@@ -16,12 +16,14 @@ a.more-btn:hover{
 }
 @media screen and (min-width: 360px) {
     a.more-btn{
+        border: 2px solid;
         font-size: 21px;
         padding: .5rem 6rem;
     }
 }
 @media screen and (min-width: 576px) {
     a.more-btn{
+        border: 3px solid;
         font-size: 24px;
         padding: .75rem 8rem;
     }
@@ -179,7 +181,7 @@ a.more-btn:hover{
 .concept{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
 }
 .concept .concept-pic {
     width: 60%;
@@ -301,11 +303,12 @@ a.more-btn:hover{
 .pick-up  a.more-btn{
     margin: 1.5rem auto 5.25rem auto;
 } 
+
 @media screen and (max-width: 768px) {
     .pick-up h2{
         margin: auto;
         font-size: 32px;
-        padding: 2.25rem 0 3rem 0;
+        padding: 2.25rem 0 2rem 0;
     }
     .pick-up .item{
         display: flex; 
@@ -415,6 +418,18 @@ a.more-btn:hover{
     display: flex;
     flex-direction: column;
 }
+.news-wrap a.card .pic{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.news-wrap a.card img{
+    transition: transform 0.5s ease,
+    opacity 0.5s ease;
+}
+.news-wrap a:hover.card img{
+    transform: scale(1.02);
+    opacity: 0.7;
+}
 .news .news-wrap a .below-info {
     display: flex;
     justify-content: space-between;
@@ -442,13 +457,19 @@ a.more-btn:hover{
     position: absolute;
     color: #60222B;
     font-weight: bold;
+    transition: transform 0.5s ease,
+    opacity 0.5s ease;
+}
+a.card:hover .samepic span{
+    transform: scale(1.02);
+    opacity: 0.7;
 }
 .news .news-wrap a .time{
     font-size: 18px;
 }
 @media screen and (min-width: 360px) {
     .news{
-        row-gap: 2rem;
+        row-gap: 1.5rem;
     }
     .news .news-wrap{
         margin:0 3rem ;
@@ -470,7 +491,7 @@ a.more-btn:hover{
     .news .samepic span{
         font-size: 18px;
         top: 80px;
-        left: 45px;
+        left: 55px;
     }
     .news a.more-btn{
         margin: auto;

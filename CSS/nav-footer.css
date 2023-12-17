@@ -19,7 +19,7 @@
         left: 1rem;
         background-color: #401202;
         border-radius: 0 0 15px 15px;
-        padding: 20px 9px;
+        padding: 1rem 0.5rem;
     }
     nav .logo img{
         width: 100%;
@@ -67,7 +67,8 @@
     .hb li:not(:last-child) a{
         display: block;
         font-size: 18px;
-        padding: 1rem 8rem;
+        text-align: center;
+        padding: 1rem; 
         font-weight: bold;
     }
     .hb li.social-media{

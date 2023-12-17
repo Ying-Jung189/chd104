@@ -46,7 +46,7 @@
 @media screen and (min-width: 360px) {
     .illus{
         background-position:
-        top 3% right 0,
+        top 0 right 0,
         bottom 30px right 5% ,
         bottom 30px left 5%;
         background-size: 20%;
