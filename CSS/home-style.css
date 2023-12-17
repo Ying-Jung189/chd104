@@ -119,7 +119,6 @@ a.more-btn:hover{
 
 .homehead-bg{
     width: 100%;
-    height: 100%;
     margin: auto;
     background-image: url("../images/head-bg.png");
     background-repeat: no-repeat;
@@ -130,16 +129,19 @@ a.more-btn:hover{
 @media screen and (min-width: 360px) {
     .homehead-bg{
         top: 230px;
+        height: 20%;
     }
 }
 @media screen and (min-width: 576px) {
     .homehead-bg{
         top: 300px;
+        height: 20%;
     }
 }
 @media screen and (min-width: 768px) {
     .homehead-bg{
         top: 500px;
+        
     }
 }   
 @media screen and (min-width: 1024px) {
@@ -369,43 +371,10 @@ a.more-btn:hover{
 
 }
 
-/* 最新消息需寫list，左右鍵position定位 */
-.news{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;  
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-}
-.news ul.news-wrap{
-    align-items: center;
-    padding: 0 5rem;
-    margin-bottom: 1rem;
-}
-.news ul.news-wrap a.card img{
-    width: 100%;
-    vertical-align: middle; 
-}
-.news ul.news-wrap a .below-info {
-    display: flex;
-    justify-content: space-between;
-}
-.news ul.news-wrap a h5{
-    display: inline-block;
-    margin: 0;
-    padding: 1.25rem 0 1.5rem 0;
-
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden;
-}
-
-.move-icon{
+/* .move-icon{
     position: absolute;
     width: 100%;
-    top: 40%;
+    top: 50%;
 }
 
 #left-btn, #right-btn{
@@ -415,116 +384,170 @@ a.more-btn:hover{
     opacity: 0;
 }
 .move-icon a.left-btn{
-    left: 16px;
+    left: 0px;
     position: absolute;
 }
 .move-icon a.right-btn{
-    right: 16px;
+    right: 0px;
     position: absolute;
+} */
+.news{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;  
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    position: relative;
 }
+
+.news h2{
+    margin: auto;
+}
+.news .news-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin:0 3rem ;
+}
+.news .news-wrap a.card{
+    display: flex;
+    flex-direction: column;
+}
+.news .news-wrap a .below-info {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.news .news-wrap .card h5{
+    flex-grow: 1;
+    display: inline-block;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.news .news-wrap a .tag span{
+    font-size: 18px;
+    padding: 7px 24px;
+    border-radius: 25px;
+}
+
 .news .samepic {
     position: relative;
 }
 .news .samepic span{
     position: absolute;
-    font-weight: bold;
     color: #60222B;
+    font-weight: bold;
 }
-.news a.more-btn{
-    margin: auto;
-    margin-bottom: 5.25rem;
+.news .news-wrap a .time{
+    font-size: 18px;
 }
 @media screen and (min-width: 360px) {
     .news{
         row-gap: 2rem;
     }
-    #container{
-        border-radius: 40px;
-        aspect-ratio: 3/1.2;
+    .news .news-wrap{
+        margin:0 3rem ;
+    }
+    .news .news-wrap a.card{
+        padding: 2rem 1rem; 
         width: 100%;
+    }
+    .news h2{
         margin: auto;
-        overflow: hidden;
+        font-size: 32px;
+        padding-top: 3rem;
     }
-    #container-list{
-        position: relative;
+    .news .news-wrap a h5{
+        flex-grow: 1;
+        font-size: 21px;
+        padding: 1.25rem 0 2rem 0;
     }
-    #container-list li {
-        float: left;
-    } 
-    #container-list li a{
-        aspect-ratio: 5/4;
-    } 
+    .news .samepic span{
+        font-size: 18px;
+        top: 80px;
+        left: 45px;
+    }
+    .news a.more-btn{
+        margin: auto;
+        margin-bottom: 5rem;
+    }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
     .news{
         row-gap: 3rem;
     }
+    .news .news-wrap a.card{
+        width: 75%;
+    }
     .news h2{
-        font-size: 32px;
-        padding-top: 2.25rem;
+        padding-top: 5rem;
     }
-    .news ul.news-wrap a h5{
-        font-size: 21px;
+    .news .news-wrap a h5{
+        font-size: 24px;
     }
-    .news ul.news-wrap a .time{
-        font-size: 16px;
+    .news .samepic span{
+        font-size: 24px;
+        top: 130px;
+        left: 80px;
     }
-    
+
 }
 @media screen and (min-width: 769px) {
     .news{
-        row-gap: 4.5rem;
+        row-gap: 4rem;
     }
-    .news ul.news-wrap a.card{
-        padding: 0px 0.75rem; 
-        width: 30%;
+    .news .news-wrap a.card{
+        width: 60%;
     }
     .news h2{
         font-size: 42px;
-        padding-top: 4rem;
-    }
-    .news ul.news-wrap a h5{
-        font-size: 24px;
-    }
-    .news ul.news-wrap a .time{
-        font-size: 18px;
     }
     .news .samepic span{
-        top: 90px;
-        left: 45px;
-        font-size: 21px;
-    }
-    
 
-}   
-@media screen and (min-width: 1024px) {
-    .news{
-        row-gap: 6.25rem;
+        top: 150px;
+        left: 100px;
     }
-    #container{
-        border-radius: 40px;
-        aspect-ratio: 3.8/1.2;
-        width: 100%;
-        margin: auto;
-        overflow: hidden;
-    }
-    #container-list{
-        position: relative;
-    }
-    #container-list li {
-        margin: 0 .5rem;
-        width: 30%;
-        float: left;
-    } 
-    .news h2{
-        padding-top: 6.25rem;
-    }
-    .news .samepic span{
-        top: 60%;
-        left: 25%;
-        font-size: 24px;
-    }
-
 }
-
-
+@media screen and (min-width: 1024px) {
+    .news .news-wrap a.card{
+        padding: 0 1rem; 
+        width: 27%;
+    }
+    .news .news-wrap a h5{
+        font-size: 24px;
+        padding: 1.25rem 0 2rem 0;
+    }
+    .news .samepic span{
+        font-size: 24px;
+        top: 120px;
+        left: 50px;
+    }
+    .news a.more-btn{
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .news .news-wrap{
+        margin:0 6rem ;
+    }
+    .news .news-wrap a.card{
+        padding: 0 1.75rem; 
+    }
+    .news h2{
+        padding-top: 6rem;
+    }
+    .news .news-wrap a h5{
+        flex-grow: 1;
+        padding: 1.25rem 0 1.5rem 0;
+    }
+    .news .samepic span{
+        top: 120px;
+        left: 55px;
+    }
+}

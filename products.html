@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="CSS/products-style.css">
     <link rel="stylesheet" href="CSS/component-set.css">
     <script src="https://kit.fontawesome.com/ea4f510ceb.js" crossorigin="anonymous"></script>
+    <script src="JS/jQuery/jquery-3.7.1.js"></script>
+    <script src="JS/function.js"></script>
     <title>購買麵包 | 日光小麥所</title>
 </head>
 <body>
@@ -37,7 +39,7 @@
         </header>
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="https://picsum.photos/72/72/?random=10"></a>
+                <a href="index.html"><img src="/images/logo/logo-white72.svg"></a>
             </div>  
             <input type="checkbox" id="switch">          
             <div class="nav-icons">
@@ -79,7 +81,7 @@
         <div class="head-bg">
             <h1>購買麵包</h1>
         </div>
-        <div class="wrap illus">
+        <div class="wrap illus wraper">
             <div class="wrap-item">
                 <div class="bread-crumbs">
                     <ul>
@@ -89,15 +91,16 @@
                 </div>
                 <div class="select-section">
                     <ul>
-                        <li><a href="#takeout">全部</a></li>
-                        <li><a href="#takeout">手拿棒</a></li>
-                        <li><a href="#bagel">貝果</a></li>
-                        <li><a href="#german-bread">德國麵包</a></li>
-                        <li><a href="#">佛卡夏</a></li>
+                        <li><a href="#" id="all">全部</a></li>
+                        <li><a href="#takeout" id="ts">吐司</a></li>
+                        <li><a href="#takeout" id="tk">手拿棒</a></li>
+                        <li><a href="#bagel" id="bg">貝果</a></li>
+                        <li><a href="#german-bread" id="gb">德國麵包</a></li>
+                        <li><a href="#" id="fs">佛卡夏</a></li>
                     </ul>
                 </div>
-                <h3 id="toast">吐司</h3>
-                <div class="row">                    
+                <h3 id="toast" class="toast-group">吐司</h3>
+                <div class="row toast-group">                    
                     <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="products-detail.html" class="card">
                             <div class="pic">
@@ -163,8 +166,8 @@
                         </a>
                     </div>
                 </div>
-                <h3 id="takeout">手拿棒</h3>
-                <div class="row">
+                <h3 id="takeout" class="takeout-group">手拿棒</h3>
+                <div class="row takeout-group">
 
                     <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
@@ -231,8 +234,8 @@
                         </a>
                     </div>
                 </div>
-                <h3 id="bagel">貝果</h3>
-                <div class="row">
+                <h3 id="bagel" class="bagel-group">貝果</h3>
+                <div class="row bagel-group">
                     <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
                             <div class="pic">
@@ -330,8 +333,8 @@
                         </a>
                     </div>
                 </div>
-                <h3 id="german-bread">德國麵包</h3>
-                <div class="row">
+                <h3 id="german-bread" class="germanbread-group">德國麵包</h3>
+                <div class="row germanbread-group">
                     
                     <div class="col-12 col-lg-3 col-md-4 col-sm-6">
                         <a href="#" class="card">
@@ -425,7 +428,7 @@
             </div>
             <div class="mobile-footer">
                 <a href="#" class="foot-logo">
-                    <img src="https://picsum.photos/64/64/?random=10">
+                    <img src="/images/logo/logo-64.svg">
                 </a>
                 <div class="social-media">
                     <a href="#" class="fb">
@@ -450,6 +453,5 @@
             </a>
         </div>
     </div>
-    <script src="JS/scrolled.js"> </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-//幻燈片+縮放
+//商品頁照片切換+縮放
 $(function () {
     let divWidth, div, winWidth, winWidthInit, imgCount, index, ratio = 0;
     let isResize = false;
@@ -39,33 +39,66 @@ $(function () {
 
     init();
 
-    for (let i = 0; i < imgCount; i++) {
-        $('#contentButton').append('<li></li>');
-    }
+    // for (let i = 0; i < imgCount; i++) {
+    //     $('#contentButton').append('<li></li>');
+    // }
 
     $('#container').width(divWidth);
     $('#container-list li').width(divWidth);
     $('#container-list').width(divWidth * imgCount);
 
-    $('#contentButton li:first').addClass('clicked');
+    // $('#contentButton li:first').addClass('clicked');
     $('#pic-number').text(`1 / ${imgCount}`);
 
-    $('#contentButton li').click(function () {
-        index = $(this).index();
+    let prevButton = $('#prev');
+    let nextButton = $('#next');
+    let picOrder = 0;
+    prevButton.click(function(){
+        picOrder--;
+        if(picOrder < 1){
+            picOrder = 0;
+        }
         if (isResize) {
             $('#container-list').animate({
-                left: div * index * -1,
+                left: div * picOrder * -1,
             });
         } else {
             $('#container-list').animate({
-                left: divWidth * index * -1,
+                left: divWidth * picOrder * -1,
             });
         }
-
-        $('#pic-number').text(`${index + 1} / ${imgCount}`);
-        $(this).addClass('clicked');
-        $('#contentButton li').not(this).removeClass('clicked');
-    });
+        $('#pic-number').text(`${picOrder + 1} / ${imgCount}`);
+    })
+    nextButton.click(function(){
+        picOrder++;
+        if(picOrder >= 5){
+            picOrder = 4;
+        }
+        if (isResize) {
+            $('#container-list').animate({
+                left: div * picOrder * -1,
+            });
+        } else {
+            $('#container-list').animate({
+                left: divWidth * picOrder * -1,
+            });
+        }
+        $('#pic-number').text(`${picOrder + 1} / ${imgCount}`);
+    })
+    // $('#contentButton li').click(function () {
+    //     index = $(this).index();
+    //     if (isResize) {
+    //         $('#container-list').animate({
+    //             left: div * index * -1,
+    //         });
+    //     } else {
+    //         $('#container-list').animate({
+    //             left: divWidth * index * -1,
+    //         });
+    //     }
+        // $(this).addClass('clicked');
+        // $('#contentButton li').not(this).removeClass('clicked');
+    // });
 });
 
 $(document).ready(function(){
@@ -154,9 +187,61 @@ $(document).ready(function(){
     });
     
     
-    
+    //骰選類別
+    if($(window).width()< 576){
+        $('#all').click(function(){
+            $('.toast-group').show()
+            $('.takeout-group').show()
+            $('.bagel-group').show()
+            $('.germanbread-group').show()
+        })
+        $('#ts').click(function(){
+            $('.toast-group').show()
+            $('.takeout-group').hide()
+            $('.bagel-group').hide()
+            $('.germanbread-group').hide()
+        })
+        $('#tk').click(function(){
+            $('.toast-group').hide()
+            $('.takeout-group').show()
+            $('.bagel-group').hide()
+            $('.germanbread-group').hide()
+        })
+        $('#bg').click(function(){
+            $('.toast-group').hide()
+            $('.takeout-group').hide()
+            $('.bagel-group').show()
+            $('.germanbread-group').hide()
+        })
+        $('#gb').click(function(){
+            $('.toast-group').hide()
+            $('.takeout-group').hide()
+            $('.bagel-group').hide()
+            $('.germanbread-group').show()
+        })
+    }
     
 
 })
+//滑下換顏色
+window.addEventListener('scroll', function(ht){
+    if(document.getElementById("scroll-fb")!= null){
+        if(window.scrollY > 400){
+            document.getElementById("scroll-fb").classList.add("change-color");
+            document.getElementById("scroll-ig").classList.add("change-color");
+        }else{
+            document.getElementById("scroll-fb").classList.remove("change-color");
+            document.getElementById("scroll-ig").classList.remove("change-color");
+        }
+    }
+    })
+//滑下顯示
+    window.addEventListener('scroll',function(vt){
+    if(window.scrollY > 500){
+        document.getElementById("top").classList.remove("close");
+    }else{
+        document.getElementById("top").classList.add("close");
+    }
+    }) 
 
 
