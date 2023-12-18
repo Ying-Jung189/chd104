@@ -181,7 +181,7 @@ a.more-btn:hover{
 .concept{
     display: flex;
     flex-wrap: wrap;
-    align-items: start;
+    align-items: center;
 }
 .concept .concept-pic {
     width: 60%;
