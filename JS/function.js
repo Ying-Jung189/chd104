@@ -219,7 +219,14 @@ $(document).ready(function(){
             $('.bagel-group').hide()
             $('.germanbread-group').show()
         })
+    }else{
+            $('.toast-group').show()
+            $('.takeout-group').show()
+            $('.bagel-group').show()
+            $('.germanbread-group').show()
     }
+
+    
     
 
 })
