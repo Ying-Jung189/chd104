@@ -145,7 +145,7 @@
 @media screen and (min-width: 769px) {
     .question{
         padding: 0 3rem;
-        border: #60222B 1.5px solid;
+        border: #60222B 2px solid;
     }
     .question h5{
         font-size: 24px;
