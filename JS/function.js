@@ -188,43 +188,72 @@ $(document).ready(function(){
     
     
     //骰選類別
-    if($(window).width()< 576){
-        $('#all').click(function(){
-            $('.toast-group').show()
-            $('.takeout-group').show()
-            $('.bagel-group').show()
-            $('.germanbread-group').show()
-        })
-        $('#ts').click(function(){
-            $('.toast-group').show()
-            $('.takeout-group').hide()
-            $('.bagel-group').hide()
-            $('.germanbread-group').hide()
-        })
-        $('#tk').click(function(){
-            $('.toast-group').hide()
-            $('.takeout-group').show()
-            $('.bagel-group').hide()
-            $('.germanbread-group').hide()
-        })
-        $('#bg').click(function(){
-            $('.toast-group').hide()
-            $('.takeout-group').hide()
-            $('.bagel-group').show()
-            $('.germanbread-group').hide()
-        })
-        $('#gb').click(function(){
-            $('.toast-group').hide()
-            $('.takeout-group').hide()
-            $('.bagel-group').hide()
-            $('.germanbread-group').show()
-        })
-    }else{
-            $('.toast-group').show()
-            $('.takeout-group').show()
-            $('.bagel-group').show()
-            $('.germanbread-group').show()
+    function selection(){
+        if($(window).width()< 576){
+            console.log('sm')
+            $('.category-btn').click(function(){
+                let targetGroup = $(this).data('target-group');
+    
+                $('.food').hide();
+                $(targetGroup).show();
+            });
+            $('#all-btn').click(function(){
+                $('.food').show();
+            });
+        }else{
+            console.log('bg')
+            $('.food').show();
+        }
     }
+
+    selection();
+    $(window).resize(function(){
+        console.log('resize')
+        selection();
+    })
+
+
+
+
+
+
+    // if($(window).width()< 576){
+    //     $('#all').click(function(){
+    //         $('.toast-group').show()
+    //         $('.takeout-group').show()
+    //         $('.bagel-group').show()
+    //         $('.germanbread-group').show()
+    //     })
+    //     $('#ts').click(function(){
+    //         $('.toast-group').show()
+    //         $('.takeout-group').hide()
+    //         $('.bagel-group').hide()
+    //         $('.germanbread-group').hide()
+    //     })
+    //     $('#tk').click(function(){
+    //         $('.toast-group').hide()
+    //         $('.takeout-group').show()
+    //         $('.bagel-group').hide()
+    //         $('.germanbread-group').hide()
+    //     })
+    //     $('#bg').click(function(){
+    //         $('.toast-group').hide()
+    //         $('.takeout-group').hide()
+    //         $('.bagel-group').show()
+    //         $('.germanbread-group').hide()
+    //     })
+    //     $('#gb').click(function(){
+    //         $('.toast-group').hide()
+    //         $('.takeout-group').hide()
+    //         $('.bagel-group').hide()
+    //         $('.germanbread-group').show()
+    //     })
+    // }else{
+    //         $('.toast-group').show()
+    //         $('.takeout-group').show()
+    //         $('.bagel-group').show()
+    //         $('.germanbread-group').show()
+    // }
 
     
     
