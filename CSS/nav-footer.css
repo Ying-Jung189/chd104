@@ -133,11 +133,29 @@
     .select-area ul a i{
         font-size: 21px;
     }
+    .select-area ul a#shop-cart{
+        position: relative;
+    }
+    .select-area ul .cart-num{
+        display: none;
+        position: absolute;
+        background-color: #E6A73D;
+        top: 5%;
+        right: 12%;
+        line-height: 2rem;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+    }
+}
 
     nav{
         display: none;
     }
-}   
+
 @media screen and (min-width: 1024px) {
     .logo{
         left: 6rem;

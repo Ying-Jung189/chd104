@@ -186,6 +186,12 @@ $(document).ready(function(){
         }
     });
     
+    //加入購物車
+    $('#add-cart').click(function(){
+        let buyAmount = $('#buy-number').val()
+        $('.cart-num').show()
+        $('.cart-num').text( buyAmount)
+    })
     
     //骰選類別
     function selection(){
@@ -211,52 +217,6 @@ $(document).ready(function(){
         console.log('resize')
         selection();
     })
-
-
-
-
-
-
-    // if($(window).width()< 576){
-    //     $('#all').click(function(){
-    //         $('.toast-group').show()
-    //         $('.takeout-group').show()
-    //         $('.bagel-group').show()
-    //         $('.germanbread-group').show()
-    //     })
-    //     $('#ts').click(function(){
-    //         $('.toast-group').show()
-    //         $('.takeout-group').hide()
-    //         $('.bagel-group').hide()
-    //         $('.germanbread-group').hide()
-    //     })
-    //     $('#tk').click(function(){
-    //         $('.toast-group').hide()
-    //         $('.takeout-group').show()
-    //         $('.bagel-group').hide()
-    //         $('.germanbread-group').hide()
-    //     })
-    //     $('#bg').click(function(){
-    //         $('.toast-group').hide()
-    //         $('.takeout-group').hide()
-    //         $('.bagel-group').show()
-    //         $('.germanbread-group').hide()
-    //     })
-    //     $('#gb').click(function(){
-    //         $('.toast-group').hide()
-    //         $('.takeout-group').hide()
-    //         $('.bagel-group').hide()
-    //         $('.germanbread-group').show()
-    //     })
-    // }else{
-    //         $('.toast-group').show()
-    //         $('.takeout-group').show()
-    //         $('.bagel-group').show()
-    //         $('.germanbread-group').show()
-    // }
-
-    
-    
 
 })
 //滑下換顏色
