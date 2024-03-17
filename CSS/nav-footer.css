@@ -84,6 +84,9 @@
     }
 }
 @media screen and (min-width: 768px){
+    nav{
+        display: none;
+    }
     header{
         display: flex;
         width: 100%;
@@ -151,11 +154,6 @@
         text-align: center;
     }
 }
-
-    nav{
-        display: none;
-    }
-
 @media screen and (min-width: 1024px) {
     .logo{
         left: 6rem;
