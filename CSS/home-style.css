@@ -433,10 +433,10 @@ a.more-btn:hover{
 .news .news-wrap a .below-info {
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
+    /* flex-grow: 1; */
 }
 .news .news-wrap .card h5{
-    flex-grow: 1;
+    /* flex-grow: 10; */
     display: inline-block;
 
     display: -webkit-box;
