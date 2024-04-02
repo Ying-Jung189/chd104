@@ -14,6 +14,7 @@ $(document).ready(function(){
     }
     // 為了處理多個商品，將商品資訊存儲為陣列
     let shoppingCart = JSON.parse(sessionStorage.getItem('shoppingCart')) || { items: [], buyAmount: 0 }
+
     
     function addToCart(productName, price, quantity) {
         const existingItemIndex = shoppingCart.items.findIndex(item => item.productName === productName)
@@ -35,8 +36,12 @@ $(document).ready(function(){
         shoppingCart = JSON.parse(storedShoppingCart)
 
         //更新header
-        $('.cart-num').show()
-        $('.cart-num').text(shoppingCart.buyAmount)
+        if (shoppingCart.buyAmount === 0) {
+            $('.cart-num').hide()
+    
+        } else {
+            $('.cart-num').show().text(shoppingCart.buyAmount)
+        }
 
     }
 
@@ -130,7 +135,7 @@ $(document).ready(function(){
         if (updatedItems.length > 0) {
             updatedTotalQuantity = updatedItems.reduce((total, item) => total + item.quantity, 0)
         }else{
-            $('.more-btn').remove()
+            $('.addCart-btn').remove()
         }
     
         // 更新購物車資訊
@@ -182,7 +187,7 @@ $(document).ready(function(){
             )
 
             if (!payAdded) {
-                const pay = $('<a></a>').text('結帳').addClass('more-btn').attr('href','#')
+                const pay = $('<a></a>').text('結帳').addClass('addCart-btn').attr('href','#')
                 $('.cart').append(pay)
                 payAdded = true
             }

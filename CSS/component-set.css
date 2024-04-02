@@ -143,7 +143,7 @@ span.inform{
     padding: 1rem 0;
 }
 
-a.more-btn{
+a.addCart-btn{
     text-decoration: none;
     font-weight: bold;
     border-radius: 50px;
@@ -157,7 +157,7 @@ a.more-btn{
     border-color 0.5s ease,
     color 0.5s ease ;
 }
-a.more-btn:hover{
+a.addCart-btn:hover{
     background-color: #60222B;
     border-color:#60222B ;
     color: #E9E5DA; 
