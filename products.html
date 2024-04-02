@@ -12,6 +12,7 @@
     <script src="https://kit.fontawesome.com/ea4f510ceb.js" crossorigin="anonymous"></script>
     <script src="JS/jQuery/jquery-3.7.1.js"></script>
     <script src="JS/function.js"></script>
+    <script src="JS/cart.js"></script>
 
     <title>購買麵包 | 日光小麥所</title>
 </head>
@@ -29,10 +30,10 @@
                         <li><a href="products.html">購買麵包</a></li>
                         <li><a href="introduce-bread.html">認識麵包</a></li>
                         <li><a href="qna.html">常見問題</a></li>
-                        <li><a href="#" id="shop-cart">
+                        <li><div id="shop-cart">
                             <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                             <div class="cart-num"></div>
-                        </a></li>
+                        </div></li>
                         <li><a href="#">
                             <i class="fa-solid fa-user" style="color: #401202;"></i>
                         </a></li>
@@ -79,6 +80,15 @@
                 </ul>
             </div>
         </nav>
+        <div class="cart">
+            <div class="upper-area">
+                <h4>購物車</h4>
+                <i class="fa-solid fa-xmark cart-close"></i>
+            </div>
+            <div class="productList">
+                
+            </div>
+        </div>
         <div class="banner">                  
         </div>
         <div class="head-bg">
@@ -110,10 +120,10 @@
                                 <img src="images/buy/buy-1.png">
                             </div>
                             <div class="info">
-                                <h5>純鮮奶吐司</h5>
+                                <h5 class="productName">純鮮奶吐司</h5>
                                 <div class="below">
                                     <span class="price">NT$50</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -126,10 +136,10 @@
                                 <img src="images/buy/buy-2.png">
                             </div>
                             <div class="info">
-                                <h5>純素藜麥吐司</h5>
+                                <h5 class="productName">純素藜麥吐司</h5>
                                 <div class="below">
                                     <span class="price">NT$70</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -143,10 +153,11 @@
                                 <img src="images/buy/buy-4.png">
                             </div>
                             <div class="info">
-                                <h5>橙香乳酪起司</h5>
+                                <h5 class="productName">橙香乳酪起司</h5>
                                 <div class="below">
                                     <span class="price">NT$60</span>
-                                    <spaspan class="shop"><i class="fa-solid fa-cart-shopping"   style="color: #401202;"></i>
+                                    <span class="addToCart">
+                                        <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
                             </div>
@@ -158,10 +169,10 @@
                                 <img src="images/buy/buy-5.png">
                             </div>
                             <div class="info">
-                                <h5>栗子蒙布朗吐司</h5>
+                                <h5 class="productName">栗子蒙布朗吐司</h5>
                                 <div class="below">
                                     <span class="price">NT$60</span>
-                                    <spaspan class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -178,10 +189,10 @@
                                 <img src="images/buy/buy2-1.png">
                             </div>
                             <div class="info">
-                                <h5>剝皮辣椒手拿棒</h5>
+                                <h5 class="productName">剝皮辣椒手拿棒</h5>
                                 <div class="below">
                                     <span class="price">NT$70</span>
-                                    <spaspan class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -194,10 +205,10 @@
                                 <img src="images/buy/buy2-2.png">
                             </div>
                             <div class="info">
-                                <h5>柚子胡椒手拿棒</h5>
+                                <h5 class="productName">柚子胡椒手拿棒</h5>
                                 <div class="below">
                                     <span class="price">NT$70</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -210,10 +221,10 @@
                                 <img src="images/buy/buy2-3.png">
                             </div>
                             <div class="info">
-                                <h5>可可鮮奶手拿棒</h5>
+                                <h5 class="productName">可可鮮奶手拿棒</h5>
                                 <div class="below">
                                     <span class="price">NT$80</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -226,10 +237,10 @@
                                 <img src="images/buy/buy2-4.png">
                             </div>
                             <div class="info">
-                                <h5>墨西哥手拿棒</h5>
+                                <h5 class="productName">墨西哥手拿棒</h5>
                                 <div class="below">
                                     <span class="price">NT$80</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -245,10 +256,10 @@
                                 <img src="images/buy/buy3-1.png">
                             </div>
                             <div class="info">
-                                <h5>經典貝果組合</h5>
+                                <h5 class="productName">經典貝果組合</h5>
                                 <div class="below">
                                     <span class="price">NT$110</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -261,10 +272,10 @@
                                 <img src="images/buy/buy3-2.png">
                             </div>
                             <div class="info">
-                                <h5>原味貝果</h5>
+                                <h5 class="productName">原味貝果</h5>
                                 <div class="below">
                                     <span class="price">NT$40</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -277,10 +288,10 @@
                                 <img src="images/buy/buy3-3.png">
                             </div>
                             <div class="info">
-                                <h5>蜜香紅茶貝果</h5>
+                                <h5 class="productName">蜜香紅茶貝果</h5>
                                 <div class="below">
                                     <span class="price">NT$45</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -293,10 +304,10 @@
                                 <img src="images/buy/buy3-4.png">
                             </div>
                             <div class="info">
-                                <h5>藍莓貝果</h5>
+                                <h5 class="productName">藍莓貝果</h5>
                                 <div class="below">
                                     <span class="price">NT$45</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -309,10 +320,10 @@
                                 <img src="images/buy/buy3-5.png">
                             </div>
                             <div class="info">
-                                <h5>鹼水貝果</h5>
+                                <h5 class="productName">鹼水貝果</h5>
                                 <div class="below">
                                     <span class="price">NT$50</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -325,10 +336,10 @@
                                 <img src="images/buy/buy3-6.png">
                             </div>
                             <div class="info">
-                                <h5>濃情可可豆貝果</h5>
+                                <h5 class="productName">濃情可可豆貝果</h5>
                                 <div class="below">
                                     <span class="price">NT$55</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -345,10 +356,10 @@
                                 <img src="images/buy/buy4-1.png">
                             </div>
                             <div class="info">
-                                <h5>扭結麵包</h5>
+                                <h5 class="productName">扭結麵包</h5>
                                 <div class="below">
                                     <span class="price">NT$45</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -361,10 +372,10 @@
                                 <img src="images/buy/buy4-2.png">
                             </div>
                             <div class="info">
-                                <h5>柏林人酸種麵包</h5>
+                                <h5 class="productName">柏林人酸種麵包</h5>
                                 <div class="below">
                                     <span class="price">NT$80</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -377,10 +388,10 @@
                                 <img src="images/buy/buy4-3.png">
                             </div>
                             <div class="info">
-                                <h5>香料酸種麵包</h5>
+                                <h5 class="productName">香料酸種麵包</h5>
                                 <div class="below">
                                     <span class="price">NT$80</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>
@@ -393,10 +404,10 @@
                                 <img src="images/buy/buy4-4.png">
                             </div>
                             <div class="info">
-                                <h5>德國酸種麵包</h5>
+                                <h5 class="productName">德國酸種麵包</h5>
                                 <div class="below">
                                     <span class="price">NT$80</span>
-                                    <span class="shop">
+                                    <span class="addToCart">
                                         <i class="fa-solid fa-cart-shopping" style="color: #401202;"></i>
                                     </span>
                                 </div>

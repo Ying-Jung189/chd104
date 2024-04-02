@@ -26,7 +26,7 @@ $(function () {
         $('#container').width(div);
         $('#container-list li').width(div);
         $('#container-list').width(div * imgCount);
-        console.log(div * imgCount);
+        // console.log(div * imgCount);
     }
 
     $(window).resize(function () {
@@ -186,31 +186,10 @@ $(document).ready(function(){
         }
     });
     
-    //加入購物車
-    //sessionStorage讀取數字
-    let buyAmount = sessionStorage.getItem('buyAmount')
-
-    //如果有數字更新header
-    if(buyAmount){
-        $('.cart-num').show()
-        $('.cart-num').text( buyAmount)
-    }
-
-    $('#add-cart').click(function(){
-        let selectedAmount = parseInt($('#buy-number').val())
-        
-        // 將新選擇的數量加到購物車中原有的數量上
-        buyAmount = (buyAmount ? parseInt(buyAmount) : 0) + selectedAmount;
-        $('.cart-num').show()
-        $('.cart-num').text( buyAmount)
-        //更新數值到sessionStorage中
-        sessionStorage.setItem('buyAmount', buyAmount)
-    })
-    
     //骰選類別
     function selection(){
         if($(window).width()< 576){
-            console.log('sm')
+            // console.log('sm')
             $('.category-btn').click(function(){
                 let targetGroup = $(this).data('target-group');
     
@@ -221,14 +200,14 @@ $(document).ready(function(){
                 $('.food').show();
             });
         }else{
-            console.log('bg')
+            // console.log('bg')
             $('.food').show();
         }
     }
 
     selection();
     $(window).resize(function(){
-        console.log('resize')
+        // console.log('resize')
         selection();
     })
 

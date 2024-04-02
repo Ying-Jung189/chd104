@@ -121,11 +121,16 @@
         justify-content: end;   
         margin: 0 1rem;
     }
-    .select-area ul a{
+    .select-area ul a, #shop-cart{
         text-decoration: none;
         line-height: 5rem;
         font-weight: bold ;
         padding: 0.8rem;
+    }
+    .select-area ul #shop-cart{
+        display: inline;
+        position: relative;
+        cursor: pointer;
     }
     .select-area ul li{
         transition: transform 0.5s ease;
@@ -133,12 +138,10 @@
     .select-area ul li:hover{
         transform: translate(0,-5px);
     }
-    .select-area ul a i{
+    .select-area ul i{
         font-size: 21px;
     }
-    .select-area ul a#shop-cart{
-        position: relative;
-    }
+
     .select-area ul .cart-num{
         display: none;
         position: absolute;
@@ -168,7 +171,7 @@
         width: 100%;
         margin: auto; 
     }
-    .select-area ul a{
+    .select-area ul a, #shop-cart{
         padding: 1.5rem;
     }
 }

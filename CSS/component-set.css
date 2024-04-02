@@ -68,6 +68,105 @@ span.inform{
     right: 0;
 }
 
+.cart{
+    position: fixed;
+    right: -40vw;
+    height: 100vh;
+    width: 24vw;
+    background-color: #E9E5DA;  
+    z-index: 100;
+    transition: right .5s ease-in-out;
+    padding: 1.5rem;
+
+    box-shadow: -5px 0 40px 3px rgba(0, 0, 0, 20%);
+}
+.cart .upper-area{
+    display: flex;
+    justify-content: space-between;
+}
+.cart h4{
+    font-size: 24px;
+    color: #401202;
+}
+.cart .cart-close{
+    font-size: 24px;
+    cursor: pointer;
+    align-self: center;
+    color: #1F1100;
+}
+.cart .productList{
+    margin: 2.4rem 0;
+}
+
+.cart .eachProduct{
+    display: flex;
+    justify-content: space-between;
+}
+.cart .eachProduct .delete {
+    font-size: 21px;
+    color: #9F9393;
+    align-self: center;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.cart .productDetail .productName{
+    font-size: 21px;
+    color: #1F1100;
+
+}
+.cart .productDetail{
+    padding: 1rem 0;
+    display: inline-block;
+}
+.productList .productprice{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.cart .productDetail span{
+    display: inline-block;
+    font-size: 18px;
+    color: #1F1100;
+    padding-right: 1rem;
+}
+.cart .productDetail p{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+}
+.priceSection{
+    border-top: 2px solid #9F9393;
+    display: flex;
+    justify-content: space-between;
+}
+.priceSection .subtotal, .total{
+    padding: 1rem 0;
+}
+
+a.more-btn{
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    border: 3px solid;
+    color: #60222B;
+    font-size: 21px;
+    padding: .5rem 42%;
+    margin: 1rem auto;
+
+    transition:background-color 0.5s ease,
+    border-color 0.5s ease,
+    color 0.5s ease ;
+}
+a.more-btn:hover{
+    background-color: #60222B;
+    border-color:#60222B ;
+    color: #E9E5DA; 
+}
+
+.cart .noProduct{
+    text-align: center;
+}
+
 .banner{
     margin: auto;
     width: 100%;
