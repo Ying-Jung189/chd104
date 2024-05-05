@@ -79,6 +79,7 @@ span.inform{
     padding: 1.5rem;
 
     box-shadow: -5px 0 40px 3px rgba(0, 0, 0, 20%);
+    overflow-y: auto;
 }
 .cart .upper-area{
     display: flex;
@@ -102,21 +103,32 @@ span.inform{
     display: flex;
     justify-content: space-between;
 }
+.cart .pricedel{
+    display: flex;
+}
+.cart .subTotalPrice{
+    padding: 0 1rem;
+    font-size: 24px;
+    align-self: center;
+    font-weight: 500;
+}
 .cart .eachProduct .delete {
     font-size: 21px;
     color: #9F9393;
     align-self: center;
     cursor: pointer;
     padding: 0.5rem;
+
+    z-index: 100;
+}
+.cart .productDetail{
+    padding: 1rem 0;
+    display: inline-block;
 }
 .cart .productDetail .productName{
     font-size: 21px;
     color: #1F1100;
 
-}
-.cart .productDetail{
-    padding: 1rem 0;
-    display: inline-block;
 }
 .productList .productprice{
     display: flex;
@@ -139,7 +151,7 @@ span.inform{
     display: flex;
     justify-content: space-between;
 }
-.priceSection .subtotal, .total{
+.priceSection .totalText, .total{
     padding: 1rem 0;
 }
 
@@ -150,7 +162,7 @@ a.addCart-btn{
     border: 3px solid;
     color: #60222B;
     font-size: 21px;
-    padding: .5rem 42%;
+    padding: .5rem 9vw;
     margin: 1rem auto;
 
     transition:background-color 0.5s ease,
